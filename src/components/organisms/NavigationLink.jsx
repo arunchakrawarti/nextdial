@@ -1,9 +1,11 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NavigationLink = ({ title, icon, link, children = [] }) => {
+
   const pathname = usePathname();
 
   const hasChildren = children.length > 0;
@@ -28,20 +30,22 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
         onClick={() => hasChildren && setOpen(!open)}
         className={`
           flex items-center justify-between
-          px-4 py-2 rounded-xl cursor-pointer
-          transition-all duration-300 group relative overflow-hidden
+          px-4 py-2
+          rounded-r-xl
+          cursor-pointer
+          transition-all duration-300
+          group relative overflow-hidden
+          border-l-2
           ${
             isActive
-              ? "bg-[#7152F30D] text-primary"
-              : "text-gray-700 hover:bg-gray-100"
+              ? "bg-[#7152F30D] text-primary border-primary"
+              : "text-gray-700 border-transparent hover:bg-gray-100"
           }
         `}
       >
-        {isActive && (
-          <div className="absolute left-0 top-0 h-full w-0.5 rounded-l-xl bg-primary" />
-        )}
 
         <div className="flex items-center gap-3 relative z-10">
+
           <i className={`${icon} text-lg`}></i>
 
           {hasChildren ? (
@@ -56,6 +60,7 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
               {title}
             </Link>
           )}
+
         </div>
 
         {hasChildren && (
@@ -65,7 +70,9 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
             }`}
           ></i>
         )}
+
       </div>
+
       {hasChildren && (
         <div
           className={`overflow-hidden transition-all duration-300 ${
@@ -73,32 +80,37 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
           }`}
         >
           <ul className="ml-6 space-y-2">
+
             {children.map((child, index) => (
+
               <li key={index}>
+
                 <Link
                   href={child.link}
                   className={`
-                    block px-4 py-2 rounded-xl text-sm font-lexend transition-all duration-300 relative overflow-hidden
+                    block px-4 py-2
+                    rounded-r-xl
+                    text-sm font-lexend
+                    transition-all duration-300
+                    border-l-2
                     ${
                       pathname === child.link
-                        ? "bg-gray-100 text-primary font-semibold"
-                        : "text-gray-500 hover:bg-gray-100 hover:text-primary"
+                        ? "bg-gray-100 text-primary font-semibold border-primary"
+                        : "text-gray-500 border-transparent hover:bg-gray-100 hover:text-primary"
                     }
                   `}
                 >
-                  {pathname === child.link && (
-                    <div className="absolute left-0 top-0 h-full w-1 rounded-l-xl bg-primary" />
-                  )}
-
-                  <span className="relative z-10">
-                    {child.title}
-                  </span>
+                  {child.title}
                 </Link>
+
               </li>
+
             ))}
+
           </ul>
         </div>
       )}
+
     </li>
   );
 };
