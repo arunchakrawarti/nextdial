@@ -34,7 +34,7 @@ const SideBar = ({ isMobile = false, isOpen = true, onClose }) => {
           alt="next.png"
           />
           </div>
-          <ul className="flex-1 overflow-y-auto no-scrollbar  px-4 py-6 space-y-2">
+          <ul className="flex-1 overflow-y-auto no-scrollbar px-4 py-6 space-y-2">
             {SideBarData[0].items.map((item, index) => (
               <NavigationLink key={index} {...item} />
             ))}

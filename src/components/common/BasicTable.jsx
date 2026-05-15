@@ -27,13 +27,13 @@ const BasicTable = ({
       <div className="w-full overflow-x-auto ">
         <table className="min-w-[900px] w-full border-collapse">
           
-          <thead className="bg-primary sticky top-0 z-10">
+          <thead className="bg-light sticky top-0 z-10">
             <tr>
               {columns.map((col, index) => (
                 <th
                   key={index}
-                  className="px-4 py-4 text-left whitespace-nowrap
-                  font-lexend font-bold text-[0.879rem] text-white"
+                  className="px-4 py-4 text-left 
+                  font-lexend font-light text-base leading-6 tracking-normal text-gray-muted"
                 >
                   {col.label}
                 </th>
@@ -67,8 +67,7 @@ const BasicTable = ({
                     <td
                       key={index}
                       className="px-4 py-4 whitespace-nowrap
-                      font-lexend font-normal text-[0.975rem]
-                      tracking-[-0.009375rem] text-gray-900"
+                      font-lexend font-light text-[16px] text-dark"
                     >
                       {value}
                     </td>

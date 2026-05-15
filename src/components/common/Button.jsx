@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const variantClasses = {
   default: "bg-gray-100 text-gray-500",
-  outline: "bg-white text-blue-600 hover:text-blue-700 border border-gray-300",
+  outline: "font-lexend text-[16px] text-primary hover:underline cursor-pointer",
   primary: "text-white bg-blue-600 hover:bg-blue-700",
   success: "bg-green-500 text-white",
   danger: "bg-white text-red-500 border border-red-400",

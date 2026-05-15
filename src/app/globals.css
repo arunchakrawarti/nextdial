@@ -16,6 +16,14 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
+   /* thead ka text color */
+   --color-gray-muted: #A2A1A8;
+   /* thead ka color */
+  --color-light: #A2A1A81A;
+   /* tbody ka text color */
+
+   --color-dark: #16151C;
+
   /* Gray Scale */
   --color-gray-50: #f9fafb;
   --color-gray-100: #f1f5f9;
@@ -34,6 +42,15 @@
 /* Dark Mode */
 
 .dark {
+
+   /* thead text color */
+  --color-gray-muted: #C7C7CC;
+
+  /* thead background/border color */
+  --color-light: #FFFFFF14;
+
+  /* tbody text color */
+  --color-dark: #FFFFFF;
 
   --background: #020617;
   --foreground: #f8fafc;

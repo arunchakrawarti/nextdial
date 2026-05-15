@@ -30,8 +30,8 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
         onClick={() => hasChildren && setOpen(!open)}
         className={`
           flex items-center justify-between
-          px-4 py-2
-          rounded-r-xl
+          px-4 py-2 mx-2
+          rounded-r-xl mt-1
           cursor-pointer
           transition-all duration-300
           group relative overflow-hidden
@@ -46,16 +46,16 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
 
         <div className="flex items-center gap-3 relative z-10">
 
-          <i className={`${icon} text-lg`}></i>
+          <i className={`${icon} text-xl`}></i>
 
           {hasChildren ? (
-            <span className="text-sm font-medium font-lexend">
+            <span className="font-lexend font-light text-base">
               {title}
             </span>
           ) : (
             <Link
               href={link}
-              className="text-sm font-medium font-lexend"
+              className="font-lexend font-bold text-base"
             >
               {title}
             </Link>
@@ -90,7 +90,7 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
                   className={`
                     block px-4 py-2
                     rounded-r-xl
-                    text-sm font-lexend
+                    font-lexend font-light text-[14px]
                     transition-all duration-300
                     border-l-2
                     ${

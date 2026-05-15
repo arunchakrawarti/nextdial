@@ -87,7 +87,7 @@ export default function Pagination({
                 <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="text-navy-dark relative rounded-[6px] p-2 text-gray-900 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="text-navy-dark relative rounded-[6px] p-2 text-dark disabled:cursor-not-allowed disabled:opacity-50"
                     aria-label="Previous page"
                 >
                     <span className="sr-only">Previous page</span>
@@ -112,7 +112,7 @@ export default function Pagination({
                         onClick={() => typeof page === "number" && handlePageChange(page)}
                         disabled={page === "..."}
                         className={`aspect-square h-9 rounded-md border-[1.5px] text-[14px] transition-all duration-100 text-gray-900 ${page === currentPage
-                            ? "border-primary bg-primary/10 text-primary"
+                            ? "border-primary bg-primary/10 text-dark"
                             : "text-navy-dark border-[#DEE1E6] hover:bg-[#DEE1E6]"
                             } ${page === "..." ? "cursor-default" : ""} `}
                         aria-current={page === currentPage ? "page" : undefined}
@@ -123,7 +123,7 @@ export default function Pagination({
                 <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="text-navy-dark relative rounded-[6px] p-2 text-gray-900 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="text-navy-dark relative rounded-[6px] p-2 text-dark disabled:cursor-not-allowed disabled:opacity-50"
                     aria-label="Next page"
                 >
                     <span className="sr-only">Next page</span>
