@@ -193,9 +193,9 @@ const UserTable = () => {
   ];
 
   return (
-    <div className="bg-white rounded-3xl p-4 sm:p-6 lg:p-8 border border-gray-200">
-      {/* Header */}
-      <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6 mb-8">
+    <div className="bg-white rounded-xl border border-gray-200">
+
+      <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6 p-4">
         {/* Left */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="w-14 h-14 rounded-2xl bg-[#F5F2FF] flex items-center justify-center shrink-0">
@@ -232,7 +232,6 @@ const UserTable = () => {
           pagination={true}
           pageSize={10}
           total={data.length}
-          wrapperClassName="border-none rounded-none"
         />
       </div>
     </div>
