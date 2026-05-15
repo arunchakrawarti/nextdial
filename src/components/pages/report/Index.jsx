@@ -64,7 +64,7 @@ const Mainhome = () => {
   return (
     <div>
       <h1 className="text-black font-semibold text-2xl font-lexend">
-        System Summary:
+        System Summary
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 gap-6">
@@ -84,7 +84,7 @@ const Mainhome = () => {
           pagination={true}
           pageSize={10}
           total={data.length}
-          wrapperClassName="rounded-xl shadow"
+          wrapperClassName="rounded-xl"
         />
       </div>
       <TodayStatsTable/>

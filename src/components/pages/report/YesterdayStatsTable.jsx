@@ -33,7 +33,7 @@ const YesterdayStatsTable = () => {
   ];
 
   return (
-    <div className="space-y-4 mt-5 bg-white rounded-xl border border-gray-200 shadow">
+    <div className="space-y-4 mt-5 bg-white rounded-xl border border-gray-200">
       <BasicTable
         columns={columns}
         data={data}

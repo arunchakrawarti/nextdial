@@ -33,13 +33,14 @@ const TodayStatsTable = () => {
   ];
 
   return (
-    <div className="space-y-4 mt-5 bg-white rounded-xl border border-gray-200 shadow">
+    <div className="space-y-4 mt-5 bg-white rounded-xl border border-gray-200">
       <BasicTable
         columns={columns}
         data={data}
         pagination={true}
         pageSize={10}
         total={data.length}
+        wrapperClassName="rounded-xl "
       />
 
       <div className="flex items-center justify-between px-2 p-2">

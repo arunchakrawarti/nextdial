@@ -11,7 +11,7 @@ const variantClasses = {
   white: "bg-[#F8F8FC] text-primary",
 
   green:"border border-gray-300 bg-[#ECFDF3] text-[#16A34A]",
-  gradient: " bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white font-bold "
+  gradient: " bg-primary "
 };
 
 function Button({

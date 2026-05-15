@@ -193,21 +193,16 @@ const UserTable = () => {
   ];
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200">
+    <div className="bg-white rounded-xl border-2 border-gray-200">
 
       <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6 p-4">
-        {/* Left */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-          <div className="w-14 h-14 rounded-2xl bg-[#F5F2FF] flex items-center justify-center shrink-0">
-            <UserRoundPlus size={24} className="text-[#7c5dfa]" />
-          </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
-            <h2 className="font-lexend font-semibold text-[22px] sm:text-[28px] lg:text-[32px] leading-tight text-dark">
+            <h2 className="font-lexend font-semibold text-[20px] sm:text-[20px] lg:text-[24px]  text-dark">
               User Listings
             </h2>
 
-            <Button variant="outline">Show all users</Button>
           </div>
         </div>
 

@@ -20,14 +20,14 @@ const BasicTable = ({
   return (
     <div
       className={clsx(
-        "w-full border border-gray-200 bg-white rounded-xl overflow-hidden",
+        "w-full border-2 border-gray-200 bg-white rounded-xl overflow-hidden",
         wrapperClassName
       )}
     >
       <div className="w-full overflow-x-auto ">
         <table className="min-w-[900px] w-full border-collapse">
           
-          <thead className="bg-light sticky top-0 z-10">
+          <thead className="bg-white sticky top-0 z-10">
             <tr>
               {columns.map((col, index) => (
                 <th

@@ -11,7 +11,7 @@ const MainLayout = ({ children, title }) => {
   }, [drawerOpen]);
 
   return (
-    <div className="flex h-screen overflow-hidden bg-gray-100">
+    <div className="flex h-screen overflow-hidden bg-white">
       <Sidebar
         isOpen={drawerOpen}
         isMobile

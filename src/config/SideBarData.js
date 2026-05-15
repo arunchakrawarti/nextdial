@@ -1,5 +1,3 @@
-// src/config/SideBarData.js
-
 export const SideBarData = [
   {
     items: [
@@ -19,17 +17,17 @@ export const SideBarData = [
           },
           {
             title: "Add A New User",
-            link: "/employees/add-employee",
+            link: "/users/add-new-user",
           },
            {
             
             title: "Copy User",
-            link: "/employees/add-employee",
+            link: "/users/copy-user",
           },
            {
             
             title: "Search For A User",
-            link: "/employees/add-employee",
+            link: "/users/search-for-user",
           },
            {
             

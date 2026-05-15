@@ -22,6 +22,13 @@
   --color-light: #A2A1A81A;
    /* tbody ka text color */
 
+   /* sidebor ka bg */
+   --color-light-gray: #A2A1A80D;
+
+   /* stats card ka border */
+   --color-border-light: #A2A1A833;
+
+
    --color-dark: #16151C;
 
   /* Gray Scale */
@@ -52,6 +59,8 @@
   /* tbody text color */
   --color-dark: #FFFFFF;
 
+  --color-border-light: #A2A1A833;
+
   --background: #020617;
   --foreground: #f8fafc;
 
@@ -60,6 +69,7 @@
   --color-white: #0f172a;
   --color-black: #ffffff;
 
+  --color-light-gray: #2A2A2A80;
   /* Gray Scale */
   --color-gray-50: #020617;
   --color-gray-100: #0f172a;

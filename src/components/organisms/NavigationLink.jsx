@@ -30,12 +30,12 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
         onClick={() => hasChildren && setOpen(!open)}
         className={`
           flex items-center justify-between
-          px-4 py-2 mx-2
+          px-4 py-2
           rounded-r-xl mt-1
           cursor-pointer
           transition-all duration-300
           group relative overflow-hidden
-          border-l-2
+          border-l-3
           ${
             isActive
               ? "bg-[#7152F30D] text-primary border-primary"
@@ -49,13 +49,21 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
           <i className={`${icon} text-xl`}></i>
 
           {hasChildren ? (
-            <span className="font-lexend font-light text-base">
+            <span
+              className={`
+                font-lexend text-base
+                ${isActive ? "font-semibold" : "font-light"}
+              `}
+            >
               {title}
             </span>
           ) : (
             <Link
               href={link}
-              className="font-lexend font-light text-base"
+              className={`
+                font-lexend text-base
+                ${isActive ? "font-semibold" : "font-light"}
+              `}
             >
               {title}
             </Link>
@@ -90,13 +98,13 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
                   className={`
                     block px-4 py-2
                     rounded-r-xl
-                    font-lexend font-light text-[14px]
+                    font-lexend text-[14px]
                     transition-all duration-300
-                    border-l-2
+                    border-l-3
                     ${
                       pathname === child.link
                         ? "bg-gray-100 text-primary font-semibold border-primary"
-                        : "text-gray-500 border-transparent hover:bg-gray-100 hover:text-primary"
+                        : "text-gray-500 font-light border-transparent hover:bg-gray-100 hover:text-primary"
                     }
                   `}
                 >
