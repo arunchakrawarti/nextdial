@@ -57,13 +57,13 @@ const SearchBarComp = ({
   };
 
   return (
-    <div className="relative bg-blue-50 flex w-full items-center justify-between rounded md:rounded-md lg:rounded-full border border-gray-300 px-3 py-2.5 md:w-80 md:py-[9.5px]">
+    <div className="relative flex w-full items-center justify-between rounded md:rounded-md lg:rounded-lg border border-gray-200 px-3 py-2.5 md:w-80 md:py-[10px]">
       {/* Left Icon */}
       {iconLeft && (
         <button
           type="button"
           onClick={runSearch}
-          className="text-md absolute left-3 font-light text-gray-500 hover:text-gray-700"
+          className="text-lg absolute left-3 font-light text-gray-800 hover:text-gray-700"
         >
           <i className="ri-search-line" />
         </button>
@@ -75,7 +75,7 @@ const SearchBarComp = ({
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        className={`w-full placeholder:text-gray-500 text-sm text-gray-600 outline-none ${iconLeft ? "pl-6" : ""
+        className={`w-full placeholder:text-gray-400 font-lexend font-light text-base tracking-normal text-gray-600 outline-none ${iconLeft ? "pl-6" : ""
           } ${iconRight ? "pr-6" : ""} ${className}`}
       />
 

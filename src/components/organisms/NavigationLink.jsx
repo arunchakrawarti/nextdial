@@ -55,7 +55,7 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
           ) : (
             <Link
               href={link}
-              className="font-lexend font-bold text-base"
+              className="font-lexend font-light text-base"
             >
               {title}
             </Link>

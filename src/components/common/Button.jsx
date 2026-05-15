@@ -4,12 +4,13 @@ import { twMerge } from "tailwind-merge";
 const variantClasses = {
   default: "bg-gray-100 text-gray-500",
   outline: "font-lexend text-[16px] text-primary hover:underline cursor-pointer",
-  primary: "text-white bg-blue-600 hover:bg-blue-700",
-  success: "bg-green-500 text-white",
-  danger: "bg-white text-red-500 border border-red-400",
-  secondary: "text-blue-500",
-  white: "bg-white",
-  black:"bg-gray-700 hover:bg-gray-300 text-white",
+  primary: "text-primary border border-primary",
+  danger: "text-primary border border-primary border border-gray-300",
+  success: "bg-white text-gray-600 border border-gray-300",
+  secondary: "rounded-xl border border-gray-300 text-[#4F7CFF]",
+  white: "bg-[#F8F8FC] text-primary",
+
+  green:"border border-gray-300 bg-[#ECFDF3] text-[#16A34A]",
   gradient: " bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white font-bold "
 };
 
@@ -22,7 +23,7 @@ function Button({
   href,
   height = "h-11",
   width = "px-4",
-  rounded = "rounded-[4px]",
+  rounded = "rounded-[9px]",
   className,
   loading,
   ...props

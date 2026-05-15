@@ -15,7 +15,7 @@ export const SideBarData = [
         children: [
           {
             title: "Show Users",
-            link: "/employees/all-employees",
+            link: "/users/show-user",
           },
           {
             title: "Add A New User",
@@ -104,7 +104,7 @@ export const SideBarData = [
         children: [
           {
             title: "Show Lists",
-            link: "/attendance/daily",
+            link: "",
           },
           {
             title: "Add A New List",
