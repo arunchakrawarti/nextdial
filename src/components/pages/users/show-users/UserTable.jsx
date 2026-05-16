@@ -227,6 +227,7 @@ const UserTable = () => {
           pagination={true}
           pageSize={10}
           total={data.length}
+          wrapperClassName="border-none"
         />
       </div>
     </div>

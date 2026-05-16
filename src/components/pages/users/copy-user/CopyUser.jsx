@@ -5,7 +5,7 @@ import Input from "@/components/common/Input";
 
 const CopyUser = () => {
   return (
-    <div className="bg-white rounded-lg p-4 border-2 border-gray-100">
+    <div className="bg-white rounded-lg p-4 border-2 border-gray-200">
       <div className="mb-6">
         <h2 className="font-bold text-black text-xl uppercase tracking-tight font-lexend">
           Copy User

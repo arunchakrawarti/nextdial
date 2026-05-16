@@ -33,26 +33,30 @@ const TodayStatsTable = () => {
   ];
 
   return (
-    <div className="space-y-4 mt-5 bg-white rounded-xl border border-gray-200">
-      <BasicTable
-        columns={columns}
-        data={data}
-        pagination={true}
-        pageSize={10}
-        total={data.length}
-        wrapperClassName="rounded-xl "
-      />
+   <div className="mt-5 bg-white rounded-xl border-2 border-gray-200 overflow-hidden">
 
-      <div className="flex items-center justify-between px-2 p-2">
-        <h2 className="font-lexend font-semibold text-[18px] leading-9 text-gray-800">
-          Total Stats for Today:
-        </h2>
+  <div className="space-y-4">
+    <BasicTable
+      columns={columns}
+      data={data}
+      pagination={true}
+      pageSize={10}
+      total={data.length}
+      wrapperClassName="rounded-none border-none"
+    />
+  </div>
 
-        <Button variant="outline">
-          [view max stats]
-        </Button>
-      </div>
-    </div>
+  <div className="flex items-center justify-between px-4 py-3 border-t border-gray-200">
+    <h2 className="font-lexend font-semibold text-[18px] leading-9 text-gray-800">
+      Total Stats for Today:
+    </h2>
+
+    <Button variant="outline">
+     [ View Max Stats]
+    </Button>
+  </div>
+
+</div>
   );
 };
 

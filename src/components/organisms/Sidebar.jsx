@@ -62,7 +62,7 @@ const SideBar = ({ isMobile = false, isOpen = true, onClose }) => {
           lg:translate-x-0
         `}
       >
-        <div className="h-[calc(100vh-40px)] flex flex-col bg-light-gray mx-5 my-5 rounded-xl">
+        <div className="h-[calc(100vh-40px)] flex flex-col bg-light-gray lg:ml-5 my-5 rounded-xl">
           <div className="flex justify-center mt-5 pb-2">
             <Image
           src="/img/nextdial.jpeg"
