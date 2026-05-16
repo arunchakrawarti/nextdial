@@ -9,9 +9,8 @@ const variantClasses = {
   success: "bg-white text-gray-600 border border-gray-300",
   secondary: "rounded-xl border border-gray-300 text-[#4F7CFF]",
   white: "bg-[#F8F8FC] text-primary",
-
-  green:"border border-gray-300 bg-[#ECFDF3] text-[#16A34A]",
-  gradient: " bg-primary "
+  green: "border border-gray-300 bg-[#ECFDF3] text-[#16A34A]",
+  gradient: "bg-primary",
 };
 
 function Button({
@@ -19,19 +18,21 @@ function Button({
   variant = "default",
   bgColor,
   textColor,
-  icon: Icon,
+  icon,
+  iconPosition = "left",
   href,
   height = "h-11",
   width = "px-4",
-  rounded = "rounded-[9px]",
+  rounded = "rounded-[10px]",
   className,
   loading,
   ...props
 }) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 font-medium transition duration-200 focus:outline-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50";
+    "inline-flex items-center justify-center gap-2 font-lexend font-light text-[1rem] leading-[1.5rem] transition duration-200 focus:outline-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-50";
 
-  const variantClass = variantClasses[variant] || variantClasses.default;
+  const variantClass =
+    variantClasses[variant] || variantClasses.default;
 
   const classes = twMerge(
     baseClasses,
@@ -44,19 +45,31 @@ function Button({
     className
   );
 
+  const content = (
+    <>
+      {iconPosition === "left" && icon && (
+        <i className={`ri-${icon} text-[1rem]`} />
+      )}
+
+      {children}
+
+      {iconPosition === "right" && icon && (
+        <i className={`ri-${icon} text-[1rem]`} />
+      )}
+    </>
+  );
+
   if (href) {
     return (
       <Link href={href} className={classes} {...props}>
-        {Icon && <i className={`ri-${Icon} text-[1rem] cursor-pointer`} />}
-        {children}
+        {content}
       </Link>
     );
   }
 
   return (
     <button className={classes} {...props}>
-      {Icon && <i className={`ri-${Icon} cursor-pointer`} />}
-      {children}
+      {content}
     </button>
   );
 }

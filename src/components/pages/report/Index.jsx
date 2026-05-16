@@ -7,29 +7,41 @@ import TodayStatsTable from "./TodayStatsTable";
 import YesterdayStatsTable from "./YesterdayStatsTable";
 
 const Mainhome = () => {
- const stats = [
+const stats = [
   {
     title: "Agents Logged In",
     value: 0,
-    icon: <Users size={20} className="text-[#7152F3]" />,
+    percentage: "12%",
+    increase: true,
+    updateDate: "July 16, 2023",
+    icon: <Users size={20} className="text-primary" />,
     href: "/agents-logged-in",
   },
   {
     title: "Agents In Calls",
     value: 1,
-    icon: <PhoneCall size={20} className="text-[#7152F3]" />,
+    percentage: "5%",
+    increase: true,
+    updateDate: "July 14, 2023",
+    icon: <PhoneCall size={20} className="text-primary" />,
     href: "/agents-in-calls",
   },
   {
     title: "Active Calls",
     value: 0,
-    icon: <PhoneIncoming size={20} className="text-[#7152F3]" />,
+    percentage: "8%",
+    increase: false,
+    updateDate: "July 14, 2023",
+    icon: <PhoneIncoming size={20} className="text-primary" />,
     href: "/active-calls",
   },
   {
     title: "Calls Ringing",
     value: 0,
-    icon: <BellRing size={20} className="text-[#7152F3]" />,
+    percentage: "12%",
+    increase: true,
+    updateDate: "July 10, 2023",
+    icon: <BellRing size={20} className="text-primary" />,
     href: "/calls-ringing",
   },
 ];
@@ -67,17 +79,21 @@ const Mainhome = () => {
         System Summary
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 gap-6">
-        {stats.map((item, index) => (
-          <StatCard
-            key={index}
-            title={item.title}
-            value={item.value}
-            icon={item.icon}
-          />
-        ))}
-      </div>
-      <div className="mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-[1.25rem] gap-[1.5rem]">
+  {stats.map((item, index) => (
+    <StatCard
+      key={index}
+      title={item.title}
+      value={item.value}
+      percentage={item.percentage}
+      increase={item.increase}
+      updateDate={item.updateDate}
+      icon={item.icon}
+      href={item.href}
+    />
+  ))}
+</div>
+      <div className="mt-5 border-light rounded-xl">
         <BasicTable
           columns={columns}
           data={data}
@@ -87,8 +103,8 @@ const Mainhome = () => {
           wrapperClassName="rounded-xl"
         />
       </div>
-      <TodayStatsTable/>
-      <YesterdayStatsTable/>
+      <TodayStatsTable />
+      <YesterdayStatsTable />
     </div>
   );
 };

@@ -21,7 +21,7 @@ const YesterdayStatsTable = () => {
   ];
 
   return (
-    <div className="mt-5 bg-white rounded-xl border-2 border-gray-200 overflow-hidden">
+    <div className="mt-5 bg-white rounded-xl border-light overflow-hidden">
       
       <BasicTable
         columns={columns}

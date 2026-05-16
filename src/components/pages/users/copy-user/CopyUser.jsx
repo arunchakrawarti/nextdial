@@ -5,7 +5,7 @@ import Input from "@/components/common/Input";
 
 const CopyUser = () => {
   return (
-    <div className="bg-white rounded-lg p-4 border-2 border-gray-200">
+    <div className="bg-white rounded-lg p-4 border-light">
       <div className="mb-6">
         <h2 className="font-bold text-black text-xl uppercase tracking-tight font-lexend">
           Copy User
@@ -49,7 +49,7 @@ const CopyUser = () => {
           />
         </div>
         <div className="md:col-span-2 flex justify-end mt-4">
-          <Button className="px-20" variant="gradient">
+          <Button  variant="gradient">
             Submit
           </Button>
         </div>

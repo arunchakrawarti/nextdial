@@ -1,87 +1,92 @@
 "use client";
 
 import Button from "../common/Button";
+import SearchBox from "@/components/atoms/SearchBox";
+import { Bell, Search } from "lucide-react";
 
 export default function Header({ onMenuClick }) {
-
   return (
-    <header className="sticky top-0 z-30 w-full bg-white">
-      
-      <div className="flex items-center justify-between gap-3 px-3 sm:px-4 md:px-6 py-3 md:py-4">
+    <header className="sticky top-0 z-30 w-full bg-white ">
 
-        {/* LEFT SIDE */}
-        <div className="flex items-center gap-2 flex-1 min-w-0 overflow-hidden text-sm font-medium text-gray-600">
+      <div className="flex flex-wrap items-center justify-between gap-[1rem] px-[1rem] sm:px-[1.25rem] lg:px-[1.5rem] py-[1rem]">
 
-          {/* MOBILE MENU BUTTON */}
+        <div className="flex items-center gap-[0.75rem] min-w-0 flex-1">
+
+          
           <Button
             onClick={onMenuClick}
-            className="mr-1 flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg border border-gray-800 text-black lg:hidden"
+            className="flex h-[2.75rem] w-[2.75rem] shrink-0 items-center justify-center rounded-[0.75rem] border border-[#ECECEE] bg-white text-black lg:hidden"
           >
-            <i className="ri-menu-2-line text-lg sm:text-xl"></i>
+            <i className="ri-menu-2-line text-[1.25rem]"></i>
           </Button>
 
-          {/* BREADCRUMB */}
-          <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto no-scrollbar whitespace-nowrap">
+         
+          <div className="min-w-0">
+            <h2 className="truncate font-lexend font-semibold text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[1.5rem] lg:leading-[2rem] text-black">
+              Hello Robert 👋🏻
+            </h2>
 
-            <span className="cursor-pointer hover:text-violet-600 transition-all duration-300 font-lexend text-gray-700 font-bold shrink-0">
-              Home
-            </span>
+            <p className="font-lexend font-light text-[0.75rem] sm:text-[0.875rem] leading-[1.25rem] text-[#A2A1A8]">
+              Good Morning
+            </p>
+          </div>
+        </div>
 
-            <i className="ri-arrow-right-s-line text-gray-700 shrink-0 font-bold"></i>
+       
+        <div className="flex items-center gap-[0.5rem] sm:gap-[1rem] w-full sm:w-auto justify-end">
 
-            <span className="cursor-pointer hover:text-violet-600 transition-all duration-300 font-lexend text-gray-700 font-bold shrink-0">
-              Timeclock
-            </span>
+         
+          <div className="hidden md:block w-full sm:w-[16rem] lg:w-[20rem]">
+            <SearchBox
+              name="search"
+              iconLeft={Search}
+              placeholder="Search"
+              className="w-full"
+            />
+          </div>
 
-            <i className="ri-arrow-right-s-line text-gray-700 shrink-0 font-bold"></i>
+         
+          <button className="flex md:hidden w-[2.75rem] h-[2.75rem] rounded-[0.75rem] border border-[#ECECEE] items-center justify-center bg-white">
+            <Search
+              size={18}
+              className="text-black"
+            />
+          </button>
 
-            <span className="cursor-pointer hover:text-violet-600 transition-all duration-300 font-lexend text-gray-700 font-bold shrink-0">
-              Chat
-            </span>
+          
+          <button className="w-[2.75rem] h-[2.75rem] sm:w-[3rem] sm:h-[3rem] rounded-[0.75rem] border border-[#ECECEE] flex items-center justify-center bg-white shrink-0">
+            <Bell
+              size={18}
+              className="text-black"
+            />
+          </button>
 
-            <i className="ri-arrow-right-s-line text-gray-700 shrink-0 font-bold"></i>
+          
+          <div className="flex items-center gap-[0.5rem] sm:gap-[0.75rem] px-[0.5rem] sm:px-[0.5rem] py-[0.4rem] sm:py-[0.2rem] rounded-[0.75rem] border border-[#ECECEE] bg-white cursor-pointer shrink-0">
 
-            <span className="text-violet-600 font-bold shrink-0 font-lexend">
-              Logout (6666)
-            </span>
+            
+            <img
+              src="https://i.pravatar.cc/100"
+              alt="profile"
+              className="w-[2.25rem] h-[2.25rem] sm:w-[2.5rem] sm:h-[2.5rem] rounded-[0.5rem] object-cover"
+            />
 
+           
+            <div className="hidden sm:block">
+              <h4 className="font-lexend font-medium text-[0.8125rem] sm:text-[0.875rem] leading-[1.25rem] text-black">
+                Robert Allen
+              </h4>
+
+              <p className="font-lexend font-light text-[0.6875rem] sm:text-[0.75rem] leading-[1rem] text-[#A2A1A8]">
+                HR Manager
+              </p>
+            </div>
+
+            <i className="ri-arrow-down-s-line text-[1.125rem] sm:text-[1.25rem] text-[#16151C]"></i>
           </div>
 
         </div>
-
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-
-          {/* DATE */}
-          <div className="hidden lg:flex items-center gap-2 text-gray-500 font-semibold">
-            <i className="ri-time-line text-lg text-gray-700"></i>
-
-            <span className="text-gray-700 whitespace-nowrap text-sm font-lexend">
-              May 12, 2026 6:11:14 PM
-            </span>
-          </div>
-
-          {/* USER */}
-          <div className="flex items-center gap-2 sm:gap-3">
-
-            <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-violet-600 text-white font-semibold shrink-0">
-              6
-            </div>
-
-            <div className="hidden sm:flex items-center gap-2">
-              <span className="text-gray-700 font-medium text-sm font-lexend">
-                6666
-              </span>
-
-              <i className="ri-arrow-down-s-line text-gray-700"></i>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
-
     </header>
   );
 }

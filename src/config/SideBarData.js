@@ -29,10 +29,11 @@ export const SideBarData = [
             title: "Search For A User",
             link: "/users/search-for-user",
           },
+          
            {
             
             title: "User Stats",
-            link: "/employees/add-employee",
+            link: "/users/user-stats",
           },
            {
             

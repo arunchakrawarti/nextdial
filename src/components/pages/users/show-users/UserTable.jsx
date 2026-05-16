@@ -1,199 +1,119 @@
 "use client";
-
 import SearchBox from "@/components/atoms/SearchBox";
+import Badge from "@/components/common/Badge";
 import BasicTable from "@/components/common/BasicTable";
 import Button from "@/components/common/Button";
-import { Search, UserRoundPlus } from "lucide-react";
+import { Pencil, Search, Trash2 } from "lucide-react";
 import Link from "next/link";
 
 const UserTable = () => {
-  const columns = [
-    {
+const columns = [
+  {
     label: "User Id",
     key: "userId",
     render: (value) => (
       <Link
         href={`/users/${value}`}
-        className=" hover:underline"
+        className="hover:underline text-primary"
       >
         {value}
       </Link>
     ),
   },
-
   {
     label: "Full Name",
     key: "fullName",
     render: (value) => (
       <Link
         href={`/users/profile/${value}`}
-        className=" hover:underline"
+        className="hover:underline text-dark"
       >
         {value}
       </Link>
     ),
   },
-
   {
     label: "Level",
     key: "level",
-    render: (value) => (
-      <Link
-        href={`/users/level/${value}`}
-        className=" hover:underline"
-      >
-        {value}
-      </Link>
-    ),
   },
-
   {
     label: "Group",
     key: "group",
+  },
+  {
+    label: "Status",
+    key: "status",
     render: (value) => (
-      <Link
-        href={`/users/group/${value}`}
-        className=" hover:underline"
-      >
-        {value}
-      </Link>
+      <Badge
+        text={value}
+        customStyle="capitalize"
+      />
     ),
   },
-
   {
-    label: "Active",
-    key: "active",
-    render: (value) => (
-      <div className="flex items-center gap-2">
-        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
-          <i className="ri-check-line text-white text-sm"></i>
-        </div>
-
-        <span className="font-lexend font-medium text-[16px] text-dark">
-          {value}
-        </span>
+    label: "Action",
+    key: "action",
+    render: (_, row) => (
+      <div className="flex items-center gap-[0.75rem]">
+        <button
+          className="w-[2rem] h-[2rem] rounded-lg bg-[#F5F2FF] flex items-center justify-center text-primary hover:opacity-80 transition"
+        >
+          <Pencil size={16} />
+        </button>
+        <button
+          className="w-[2rem] h-[2rem] rounded-lg bg-[#FEF3F2] flex items-center justify-center text-[#F04438] hover:opacity-80 transition"
+        >
+          <Trash2 size={16} />
+        </button>
       </div>
     ),
   },
+];
 
-    {
-      label: "Modify",
-      key: "modify",
-      render: () => (
-        <Button
-          variant="danger"
-          icon="pencil-line"
-          className="rounded-xl whitespace-nowrap"
-        >
-          Modify
-        </Button>
-      ),
-    },
+const data = [
+  {
+    userId: "5001",
+    fullName: "Manish Kumar",
+    level: "1",
+    group: "agent",
+    status: "active",
+  },
 
-    {
-      label: "Stats",
-      key: "stats",
-      render: () => (
-        <Button
-          variant="secondary"
-          icon="bar-chart-line"
-          className="rounded-xl"
-        >
-          Stats
-        </Button>
-      ),
-    },
+  {
+    userId: "5002",
+    fullName: "Rahul Sharma",
+    level: "1",
+    group: "agent",
+    status: "inactive",
+  },
 
-    {
-      label: "Status",
-      key: "status",
-      render: () => (
-        <Button variant="green">
-          <div className="w-2.5 h-2.5 rounded-full bg-[#22C55E]"></div>
-          Status
-        </Button>
-      ),
-    },
+  {
+    userId: "5003",
+    fullName: "Amit Verma",
+    level: "2",
+    group: "admin",
+    status: "inactive",
+  },
 
-    {
-      label: "Time",
-      key: "time",
-      render: () => (
-        <Button variant="white" icon="time-line">
-          Time
-        </Button>
-      ),
-    },
-  ];
+  {
+    userId: "5004",
+    fullName: "Rohit Singh",
+    level: "1",
+    group: "agent",
+    status: "active",
+  },
 
-  const data = [
-    {
-      userId: "5001",
-      fullName: "5001",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "5002",
-      fullName: "5002",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "5003",
-      fullName: "5003",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "5004",
-      fullName: "5004",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "5005",
-      fullName: "5005",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "6666",
-      fullName: "Admin",
-      level: "9",
-      group: "ADMIN",
-      active: "Y",
-    },
-
-    {
-      userId: "man123",
-      fullName: "manish",
-      level: "1",
-      group: "agent",
-      active: "Y",
-    },
-
-    {
-      userId: "manish",
-      fullName: "Manish kumar",
-      level: "9",
-      group: "ADMIN",
-      active: "Y",
-    },
-  ];
+  {
+    userId: "5005",
+    fullName: "Sandeep Kumar",
+    level: "3",
+    group: "manager",
+    status: "active",
+  },
+];
 
   return (
-    <div className="bg-white rounded-xl border-2 border-gray-200">
+    <div className="bg-white rounded-xl border-light">
 
       <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6 p-4">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">

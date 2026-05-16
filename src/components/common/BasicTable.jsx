@@ -20,7 +20,7 @@ const BasicTable = ({
   return (
     <div
       className={clsx(
-        "w-full border-2 border-gray-200 bg-white rounded-xl overflow-hidden",
+        "w-full bg-white rounded-xl overflow-hidden",
         wrapperClassName
       )}
     >
@@ -33,7 +33,7 @@ const BasicTable = ({
                 <th
                   key={index}
                   className="px-4 py-4 text-left 
-                  font-lexend font-light text-base leading-6 tracking-normal text-gray-muted"
+                  font-lexend font-light text-[1rem] leading-[1.5rem] text-gray-muted"
                 >
                   {col.label}
                 </th>
@@ -42,7 +42,7 @@ const BasicTable = ({
               {actions && (
                 <th
                   className="px-4 py-4 text-left whitespace-nowrap
-                  font-lexend font-bold text-[0.875rem] text-white"
+                  font-lexend font-light text-[1rem] leading-[1.5rem] text-[#A2A1A8]"
                 >
                   Action
                 </th>
@@ -66,7 +66,7 @@ const BasicTable = ({
                   return (
                     <td
                       key={index}
-                      className="px-4 py-4 whitespace-nowrap
+                      className="px-4 py-3 whitespace-nowrap
                       font-lexend font-light text-[16px] text-dark"
                     >
                       {value}
@@ -75,7 +75,7 @@ const BasicTable = ({
                 })}
 
                 {actions && (
-                  <td className="px-4 py-4 whitespace-nowrap">
+                  <td className="px-4 py-3 whitespace-nowrap">
                     <div className="flex gap-3">
                       {actions.map((Action, i) => (
                         <Action key={i} row={row} />
@@ -91,7 +91,7 @@ const BasicTable = ({
       </div>
 
       {pagination && (
-        <div className="sticky bottom-0 bg-white border-t border-gray-200 p-4 flex justify-end">
+        <div className="sticky bottom-0 bg-white border-t border-gray-200 p-3 flex justify-end">
           <Pagination pageSize={pageSize} total={total} />
         </div>
       )}
