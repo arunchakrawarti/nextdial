@@ -3,11 +3,18 @@
 import React from "react";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
+import AgentTalkTimeReport from "./AgentTalkTimeReport";
+import AgentLoginTable from "./AgentLoginTable";
+import AgentWebserver from "./AgentWebserver";
+import TimeClockLogin from "./TimeClockLogin";
+import CloserGroup from "./CloserGroup";
+import OutboundCalls from "./OutboundCalls";
+import InboundCloser from "./InboundCloser";
+import AgentActivity from "./AgentActivity";
 
 const MainUser = () => {
   return (
     <div className="space-y-[1.5rem]">
-
       <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
 
         <div>
@@ -15,7 +22,7 @@ const MainUser = () => {
             User Stats Report
           </h1>
 
-          <p className="mt-[0.25rem] font-lexend font-light text-[0.875rem] leading-[1.375rem] mb-5 text-gray-muted">
+          <p className="mt-[0.25rem] font-lexend font-light text-[0.875rem] mb-5 text-gray-muted">
             View agent time, status and activity reports
           </p>
         </div>
@@ -67,13 +74,13 @@ const MainUser = () => {
 
           <label
             htmlFor="archivedData"
-            className="cursor-pointer font-lexend font-light text-[0.875rem] leading-[1.375rem] text-gray-muted"
+            className="cursor-pointer font-lexend font-light text-[0.875rem] text-gray-muted"
           >
             Search archived data
           </label>
         </div>
         
-        <div className="mt-[2rem]">
+        <div className="mt-[2rem] flex justify-end">
           <Button
             variant="gradient"
             icon="arrow-right-line"
@@ -86,6 +93,14 @@ const MainUser = () => {
         </div>
 
       </div>
+      <AgentTalkTimeReport/>
+      <AgentLoginTable/>
+      <AgentWebserver/>
+      <TimeClockLogin/>
+      <CloserGroup/>
+      <OutboundCalls/>
+      <InboundCloser/>
+      <AgentActivity/>
     </div>
   );
 };
