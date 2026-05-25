@@ -16,14 +16,29 @@ const Input = ({
 }) => {
   return (
     <div className="flex w-full flex-col gap-1">
-      {label && (
+      {label && rest?.type !== "checkbox" && (
         <label className="font-inter font-semibold mb-1 text-[12px] text-gray-600 uppercase tracking-wider font-lexend">
           {label}
         </label>
       )}
 
-      {/* TEXTAREA */}
-      {rest?.type === "textarea" ? (
+      {/* CHECKBOX */}
+      {rest?.type === "checkbox" ? (
+        <label className="flex items-center gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            {...rest}
+            className={clsx(
+              "h-4 w-4 rounded border-gray-300 accent-primary",
+              error && "border-red-400"
+            )}
+          />
+          <span className="text-sm text-gray-700 font-lexend">
+            {rest.checkboxLabel || label}
+          </span>
+        </label>
+      ) : rest?.type === "textarea" ? (
+        /* TEXTAREA */
         <div
           className={clsx(
             "flex w-full gap-3 rounded md:rounded-lg px-3 py-2 border border-gray-300 font-lexend bg-white min-h-36 max-h-56",

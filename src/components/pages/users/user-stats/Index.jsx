@@ -11,14 +11,19 @@ import CloserGroup from "./CloserGroup";
 import OutboundCalls from "./OutboundCalls";
 import InboundCloser from "./InboundCloser";
 import AgentActivity from "./AgentActivity";
+import Recordings from "./Recordings";
+import ManualOutbound from "./ManualOutbound";
+import LeadSearches from "./LeadSearches";
+import PreviewLead from "./PreviewLead";
+import AgentLead from "./AgentLead";
+import ManagerPause from "./ManagerPause";
 
 const MainUser = () => {
   return (
     <div className="space-y-[1.5rem]">
       <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
-
         <div>
-          <h1 className="font-lexend font-semibold text-[1.5rem] leading-[2rem] text-dark">
+          <h1 className="font-lexend font-semibold text-[1.5rem]  text-dark">
             User Stats Report
           </h1>
 
@@ -28,18 +33,9 @@ const MainUser = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem]">
+          <Input label="DATE FROM" type="date" />
 
-          <Input
-            label="DATE FROM"
-            type="date"
-            defaultValue="2026-05-16"
-          />
-
-          <Input
-            label="DATE TO"
-            type="date"
-            defaultValue="2026-05-16"
-          />
+          <Input label="DATE TO" type="date" />
 
           <Input
             label="CALL STATUS"
@@ -63,23 +59,10 @@ const MainUser = () => {
           />
         </div>
 
-        
         <div className="mt-[1.5rem] flex items-center gap-[0.5rem]">
-
-          <input
-            type="checkbox"
-            id="archivedData"
-            className="h-[1rem] w-[1rem] cursor-pointer rounded border-light accent-primary"
-          />
-
-          <label
-            htmlFor="archivedData"
-            className="cursor-pointer font-lexend font-light text-[0.875rem] text-gray-muted"
-          >
-            Search archived data
-          </label>
+          <Input type="checkbox" label="Search archived data" />
         </div>
-        
+
         <div className="mt-[2rem] flex justify-end">
           <Button
             variant="gradient"
@@ -89,18 +72,22 @@ const MainUser = () => {
           >
             Submit
           </Button>
-
         </div>
-
       </div>
-      <AgentTalkTimeReport/>
-      <AgentLoginTable/>
-      <AgentWebserver/>
-      <TimeClockLogin/>
-      <CloserGroup/>
-      <OutboundCalls/>
-      <InboundCloser/>
-      <AgentActivity/>
+      <AgentTalkTimeReport />
+      <AgentLoginTable />
+      <AgentWebserver />
+      <TimeClockLogin />
+      <CloserGroup />
+      <OutboundCalls />
+      <InboundCloser />
+      <AgentActivity />
+      <Recordings />
+      <ManualOutbound />
+      <LeadSearches />
+      <PreviewLead />
+      <AgentLead />
+      <ManagerPause />
     </div>
   );
 };

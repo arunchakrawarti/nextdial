@@ -38,17 +38,12 @@ export const SideBarData = [
            {
             
             title: "User Status",
-            link: "/employees/add-employee",
+            link: "/users/user-status",
           },
            {
             
             title: "Time Sheet",
-            link: "/employees/add-employee",
-          },
-           {
-            
-            title: "Days Status",
-            link: "/employees/add-employee",
+            link: "/users/time-sheet",
           },
         ],
       },
