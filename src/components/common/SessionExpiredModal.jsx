@@ -20,21 +20,21 @@ const SessionExpiredModal = () => {
 
   return (
     <div className="bg-opacity-40 fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-[1px]">
-      <div className="mx-auto w-[90%] max-w-md space-y-4 rounded-2xl bg-[var(--color-white)] p-6 shadow-xl md:w-full md:p-8">
+      <div className="mx-auto w-[90%] max-w-md space-y-4 rounded-2xl bg-white p-6 shadow-xl md:w-full md:p-8">
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-50 text-red-500 md:h-14 md:w-14">
           <AlertCircle /> {/* Optional: Use an alert icon like */}
         </div>
-        <h2 className="text-lg font-semibold text-[var(--color-gray-800)] md:text-xl">
+        <h2 className="text-lg font-semibold text-gray-800 md:text-xl">
           Session Expired
         </h2>
-        <p className="text-xs text-[var(--color-gray-500)] md:text-sm">
+        <p className="text-xs text-gray-500 md:text-sm">
           Your session has expired due to inactivity. Please log in again to
           continue.
         </p>
 
         <Button
           onClick={handleLogout}
-          className="w-full rounded-full bg-[var(--color-black)] py-2.5 text-[var(--color-white)]"
+          className="w-full rounded-full bg-black py-2.5 text-white"
         >
           Login Again
         </Button>

@@ -33,7 +33,7 @@ const BasicTable = ({
                 <th
                   key={index}
                   className="px-4 py-4 text-left 
-                  font-lexend font-light text-[1rem] leading-[1.5rem] text-gray-muted"
+                  font-lexend font-light text-[1.1rem]  text-gray-muted"
                 >
                   {col.label}
                 </th>
@@ -42,7 +42,7 @@ const BasicTable = ({
               {actions && (
                 <th
                   className="px-4 py-4 text-left whitespace-nowrap
-                  font-lexend font-light text-[1rem] leading-[1.5rem] text-[#A2A1A8]"
+                  font-lexend font-light text-[1.1rem] text-gray-muted"
                 >
                   Action
                 </th>
@@ -67,7 +67,7 @@ const BasicTable = ({
                     <td
                       key={index}
                       className="px-4 py-3 whitespace-nowrap
-                      font-lexend font-light text-[16px] text-dark"
+                      font-lexend font-light text-base text-gray-800"
                     >
                       {value}
                     </td>
