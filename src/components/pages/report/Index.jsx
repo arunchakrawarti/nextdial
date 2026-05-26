@@ -15,7 +15,7 @@ const stats = [
     increase: true,
     updateDate: "July 16, 2023",
     icon: <Users size={20} className="text-primary" />,
-    href: "/agents-logged-in",
+    href: "/report/realtime-report",
   },
   {
     title: "Agents In Calls",
@@ -24,7 +24,7 @@ const stats = [
     increase: true,
     updateDate: "July 14, 2023",
     icon: <PhoneCall size={20} className="text-primary" />,
-    href: "/agents-in-calls",
+    href: "/report/realtime-report",
   },
   {
     title: "Active Calls",
@@ -33,7 +33,7 @@ const stats = [
     increase: false,
     updateDate: "July 14, 2023",
     icon: <PhoneIncoming size={20} className="text-primary" />,
-    href: "/active-calls",
+    href: "/report/realtime-report",
   },
   {
     title: "Calls Ringing",
@@ -42,7 +42,7 @@ const stats = [
     increase: true,
     updateDate: "July 10, 2023",
     icon: <BellRing size={20} className="text-primary" />,
-    href: "/calls-ringing",
+    href: "/report/realtime-report",
   },
 ];
 
