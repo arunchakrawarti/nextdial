@@ -30,7 +30,7 @@ const Input = ({
             {...rest}
             className={clsx(
               "h-4 w-4 rounded border-gray-300 accent-primary",
-              error && "border-red-400"
+              error && "border-red-400",
             )}
           />
           <span className="text-sm text-gray-700 font-lexend">
@@ -43,7 +43,7 @@ const Input = ({
           className={clsx(
             "flex w-full gap-3 rounded md:rounded-lg px-3 py-2 border border-gray-300 font-lexend bg-white min-h-36 max-h-56",
             error && "border-red-400 ring-2 ring-red-300",
-            className
+            className,
           )}
         >
           {icon && <i className={`${icon} ri-lg text-gray-400`} />}
@@ -58,7 +58,7 @@ const Input = ({
           className={clsx(
             "flex w-full items-center gap-3 rounded md:rounded-lg px-3 py-1 border border-gray-300 bg-white font-lexend",
             error && "border-red-400 ring-2 ring-red-300",
-            className
+            className,
           )}
         >
           {icon && <i className={`${icon} ri-lg text-gray-400`} />}
@@ -93,14 +93,19 @@ const Input = ({
           className={clsx(
             "flex w-full items-center gap-3 rounded md:rounded-lg px-3 py-1 border border-gray-300 bg-white font-lexend",
             error && "border-red-400 ring-2 ring-red-300",
-            className
+            className,
           )}
         >
           {icon && <i className={`${icon} ri-lg text-gray-400`} />}
 
           <input
             {...rest}
-            className="py-3 md:py-2.5 w-full text-sm outline-none bg-transparent font-lexend text-gray-700"
+            className={clsx(
+              "w-full text-sm outline-none bg-transparent font-lexend text-gray-700",
+              "py-3 md:py-2.5",
+              rest?.type === "otp" && "text-center",
+              className,
+            )}
           />
         </div>
       )}

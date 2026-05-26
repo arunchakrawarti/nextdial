@@ -6,6 +6,7 @@ const variantClasses = {
   outline: "font-lexend text-[16px] text-primary hover:underline cursor-pointer",
   primary: "text-primary border border-primary",
   danger: "text-primary border border-primary border border-gray-300",
+  ghost: "bg-white text-gray-500 ",
   success: "bg-white text-gray-600 border-light",
   secondary: "rounded-xl border border-gray-300 text-[#4F7CFF]",
   tertiary:"text-indigo-600",

@@ -54,11 +54,11 @@ export const SideBarData = [
         children: [
           {
             title: "Campaigns Main",
-            link: "/departments/all-departments",
+            link: "/campaigns/campaigns-main",
           },
           {
             title: "Statues",
-            link: "/departments/add-department",
+            link: "/campaigns/statuses",
           },
           {
             title: "HotKeys",
