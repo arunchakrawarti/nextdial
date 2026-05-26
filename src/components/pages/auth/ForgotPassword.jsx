@@ -8,7 +8,7 @@ const ForgotPassword = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md bg-white rounded-xl shadow-md p-5 sm:p-6 md:p-8">
-        <Button href="/login"
+        <Button href="/auth/signin"
           variant="ghost"
           className="px-0"
         >
@@ -32,7 +32,7 @@ const ForgotPassword = () => {
           />
         </div>
 
-        <Button href="/otp-verification"
+        <Button href="/auth/otp-verification"
           variant="gradient"
           className="w-full text-white"
         >

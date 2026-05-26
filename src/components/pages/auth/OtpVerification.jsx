@@ -30,7 +30,7 @@ const OtpVerification = () => {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md bg-white rounded-xl shadow-md p-6">
         <Button
-          href="/forget-password"
+          href="/auth/forget-password"
           variant="ghost"
           className="mb-4 px-0 h-auto text-sm text-gray-500"
         >

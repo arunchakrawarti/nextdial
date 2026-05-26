@@ -3,7 +3,7 @@ import React from "react";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
 
-const Login = () => {
+const Signin = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
@@ -28,7 +28,7 @@ const Login = () => {
             <Input type="checkbox" checkboxLabel="Remember Me" />
           </div>
 
-          <Button href="/forget-password" variant="outline"
+          <Button href="/auth/forget-password" variant="outline"
           >
             Forgot Password?
           </Button>
@@ -42,4 +42,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signin;

@@ -1,10 +1,10 @@
-import OtpVerification from '@/components/pages/login/OtpVerification'
+import Signin from '@/components/pages/auth/Signin'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <OtpVerification/>
+      <Signin/>
     </div>
   )
 }
