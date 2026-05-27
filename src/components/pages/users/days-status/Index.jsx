@@ -1,37 +1,19 @@
-"use client";
-
 import React from "react";
-import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
-import AgentTalkTimeReport from "./AgentTalkTimeReport";
-import AgentLoginTable from "./AgentLoginTable";
-import AgentWebserver from "./AgentWebserver";
-import TimeClockLogin from "./TimeClockLogin";
-import CloserGroup from "./CloserGroup";
-import OutboundCalls from "./OutboundCalls";
-import InboundCloser from "./InboundCloser";
-import AgentActivity from "./AgentActivity";
-import Recordings from "./Recordings";
-import ManualOutbound from "./ManualOutbound";
-import LeadSearches from "./LeadSearches";
-import PreviewLead from "./PreviewLead";
-import AgentLead from "./AgentLead";
-import ManagerPause from "./ManagerPause";
-import UserStatsTab from "./UserStatsTab";
-import UserReportTabs from "./UserReportTabs";
+import Input from "@/components/common/Input";
 
-const MainUser = () => {
+const MainStatus = () => {
   return (
-    <div className="space-y-[1.5rem]">
-      <UserStatsTab/>
+    <div>
       <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
         <div>
           <h1 className="font-lexend font-semibold text-[1.5rem]  text-dark">
-            User Stats Report
+            Single Agent Daily
           </h1>
 
           <p className="mt-[0.25rem] font-lexend font-light text-[0.875rem] mb-5 text-gray-muted">
-            View agent time, status and activity reports
+            Please select a user and date-time below and click submit. Note:
+            stats taken from shift specified
           </p>
         </div>
 
@@ -41,7 +23,7 @@ const MainUser = () => {
           <Input label="DATE TO" type="date" />
 
           <Input
-            label="CALL STATUS"
+            label="CAMPAIGNS"
             type="select"
             placeholder="Select Call Status"
             options={[
@@ -51,13 +33,28 @@ const MainUser = () => {
             ]}
           />
           <Input
-            label="USER"
+            label="DISPLAY AS"
             type="select"
             placeholder="Select User"
             options={[
               { label: "Manish", value: "manish" },
               { label: "Admin", value: "admin" },
               { label: "Agent", value: "agent" },
+            ]}
+          />
+          <Input
+            label="USER"
+            type="text"
+            placeholder="Enter User"
+          />
+          <Input
+            label="SHIFT"
+            type="select"
+            placeholder="Select User"
+            options={[
+              { label: "ALL", value: "all" },
+              { label: "AM", value: "am" },
+              { label: "PM", value: "pm" },
             ]}
           />
         </div>
@@ -77,23 +74,8 @@ const MainUser = () => {
           </Button>
         </div>
       </div>
-      <UserReportTabs/>
-      <AgentTalkTimeReport />
-      <AgentLoginTable />
-      <AgentWebserver />
-      <TimeClockLogin />
-      <CloserGroup />
-      <OutboundCalls />
-      <InboundCloser />
-      <AgentActivity />
-      <Recordings />
-      <ManualOutbound />
-      <LeadSearches />
-      <PreviewLead />
-      <AgentLead />
-      <ManagerPause />
     </div>
   );
 };
 
-export default MainUser;
+export default MainStatus;

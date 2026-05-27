@@ -4,33 +4,16 @@ import Badge from "@/components/common/Badge";
 import BasicTable from "@/components/common/BasicTable";
 import Button from "@/components/common/Button";
 import { Pencil, Search, Trash2 } from "lucide-react";
-import Link from "next/link";
 
 const UserTable = () => {
 const columns = [
   {
     label: "User Id",
     key: "userId",
-    render: (value) => (
-      <Link
-        href={`/users/${value}`}
-        className="hover:underline text-primary"
-      >
-        {value}
-      </Link>
-    ),
   },
   {
     label: "Full Name",
     key: "fullName",
-    render: (value) => (
-      <Link
-        href={`/users/profile/${value}`}
-        className="hover:underline text-dark"
-      >
-        {value}
-      </Link>
-    ),
   },
   {
     label: "Level",

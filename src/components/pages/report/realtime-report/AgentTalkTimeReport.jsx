@@ -64,10 +64,10 @@ const AgentTalkTimeReport = ({ isExpanded }) => {
             key={index} 
             className="flex items-center justify-between w-full py-2.5 border-b border-gray-100 last:border-b-0"
           >
-            <span className="font-bold text-gray-800 tracking-wide text-right w-[50%] sm:w-[55%] truncate">
+            <span className="font-bold text-gray-800 w-[55%]">
               {item.label}
             </span>
-            <span className="text-gray-500 font-light text-left w-[50%] sm:w-[45%] pl-3 whitespace-nowrap">
+            <span className="text-gray-500 font-light w-[45%] text-left">
               {item.val}
             </span>
           </div>

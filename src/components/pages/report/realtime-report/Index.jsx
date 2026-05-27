@@ -4,6 +4,7 @@ import { RefreshCw, Settings2 } from "lucide-react";
 import Button from "@/components/common/Button";
 import RealtimeTab from "./RealtimeTab";
 import Reportoption from "./Reportoption";
+import RealTimeStats from "./RealTimeStats";
 
 const MainrealTime = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,11 +35,11 @@ const MainrealTime = () => {
               RELOAD NOW
             </Button>
 
-            <Button variant="success">
+            <Button href="/campaigns/campaigns-main" variant="success">
               MODIFY
             </Button>
 
-            <Button variant="success">
+            <Button href="/report/summary-report" variant="success">
               SUMMARY
             </Button>
           </div>
@@ -46,6 +47,7 @@ const MainrealTime = () => {
       </div>
 
       <RealtimeTab />
+      <RealTimeStats/>
 
       <Reportoption isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </div>

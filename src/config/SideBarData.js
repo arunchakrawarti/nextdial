@@ -45,6 +45,11 @@ export const SideBarData = [
             title: "Time Sheet",
             link: "/users/time-sheet",
           },
+          {
+            
+            title: "Days Status",
+            link: "/users/days-status",
+          },
         ],
       },
 
