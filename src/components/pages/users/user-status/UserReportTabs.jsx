@@ -26,7 +26,7 @@ const UserReportTabs = () => {
     {
       id: 4,
       label: "User multiple day status detail report",
-      path: "/users/time-sheet",
+      path: "/users/single-agent",
       icon: <Calendar size={18} className="text-primary" />,
     },
   ];

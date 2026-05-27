@@ -1,9 +1,12 @@
 import Button from "@/components/common/Button";
 import React from "react";
+import UserReportTabs from "./UserReportTabs";
+import UserStatsTab from "./UserStatsTab";
 
 const UserStatus = () => {
   return (
     <div className="space-y-5">
+      <UserStatsTab/>
       <h2 className="font-bold text-black text-lg sm:text-2xl tracking-tight font-lexend">
         User Status for
       </h2>
@@ -40,6 +43,7 @@ const UserStatus = () => {
           TIMECLOCK LOG THIS USER OUT
         </Button>
       </div>
+      <UserReportTabs/>
     </div>
   );
 };
