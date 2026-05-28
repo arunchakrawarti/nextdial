@@ -45,7 +45,7 @@ const ReportTabs = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full mt-5 border-light bg-light-gray rounded-xl overflow-x-auto">
+      <div className="w-full mt-5 border-light rounded-xl overflow-x-auto">
         <div className="flex items-center min-w-max gap-2 p-1.5">
           {tabData.map((tab) => (
             <button
@@ -69,7 +69,7 @@ const ReportTabs = () => {
         </div>
       </div>
       <div className="mt-5">
-        <div className="border rounded-lg bg-white space-y-4">
+        <div className="border-light rounded-lg bg-white space-y-4">
           
           <AgentTalkTimeReport isExpanded={isCurrentlyExpanded} />
           {activeOtherTab ? (

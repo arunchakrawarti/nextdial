@@ -11,6 +11,7 @@ const variantClasses = {
   secondary: "rounded-xl border border-gray-300 text-[#4F7CFF]",
   tertiary:"text-indigo-600",
   white: "bg-[#F8F8FC] text-primary",
+  warning:"text-red-500",
   green: "border border-gray-300 bg-[#ECFDF3] text-[#16A34A]",
   gradient: "bg-primary",
 };
