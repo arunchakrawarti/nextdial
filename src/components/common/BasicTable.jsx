@@ -1,6 +1,5 @@
 "use client";
-
-import clsx from "clsx";
+ import clsx from "clsx";
 import Pagination from "../common/Pagination";
 
 const getNestedValue = (obj, path) => {

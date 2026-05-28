@@ -2,17 +2,24 @@
 import { useState } from "react";
 import AddNewCampaign from "./AddNewCampaign";
 import CampaignStatusesTable from "./Statuses";
+import HotKeys from "./HotKeys";
+import LeadRecycle from "./LeadRecycle";
+import AutoAltNumberDialing from "./AutoAltNumberDialing";
+import ListMix from "./ListMix";
+import Survey from "./Survey";
+import PauseCode from "./PauseCode";
 
 const tabData = [
-  { id: "viewMore", label: "VIEW MORE" },
-  { id: "userGroup", label: "USER GROUP" },
-  { id: "serverInfo", label: "SERVER INFO" },
-  { id: "waitingCalls", label: "WAITING CALLS" },
-  { id: "groupStats", label: "IN-GROUP STATS" },
-  { id: "phones", label: "PHONES" },
-  { id: "monitors", label: "MONITORS" },
-  { id: "custPhones", label: "CUSTPHONES" },
-  { id: "custInfo", label: "CUST INFO" },
+  { id: "viewMore", label: "DETAILS" },
+  { id: "userGroup", label: "STATUSES" },
+  { id: "serverInfo", label: "HOTKEYS" },
+  { id: "waitingCalls", label: "LEAD RECYCLING" },
+  { id: "groupStats", label: "AUTO ALT DIAL" },
+  { id: "phones", label: "LIST MIX" },
+  { id: "monitors", label: "SURVEY" },
+  { id: "custPhones", label: "PAUSE CODES" },
+  { id: "custInfo", label: "AC CID" },
+  { id: "realtime", label: "REAL-TIME" },
 ];
 
 const ReportTabs = () => {
@@ -42,53 +49,41 @@ const ReportTabs = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-sm mt-5">
+      <div className=" mt-5">
+        {activeTab === "viewMore" && <AddNewCampaign />}
 
-        {activeTab === "viewMore" && (
-          <AddNewCampaign />
-        )}
+        {activeTab === "userGroup" && <CampaignStatusesTable />}
 
-        {activeTab === "userGroup" && (
-          <CampaignStatusesTable />
-        )}
-
-        {activeTab === "serverInfo" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            🖥️ [TODO: ServerInfoTable Component]
-          </div>
-        )}
+        {activeTab === "serverInfo" && <HotKeys />}
 
         {activeTab === "waitingCalls" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            📞 [TODO: Waiting Calls]
-          </div>
+          
+            <LeadRecycle/>
+    
         )}
 
         {activeTab === "groupStats" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            📈 [TODO: In-Group Stats]
-          </div>
+          <AutoAltNumberDialing/>
         )}
 
         {activeTab === "phones" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            ☎️ [TODO: PhoneTable Component]
-          </div>
+          <ListMix/>
         )}
 
         {activeTab === "monitors" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            🖥️ [TODO: MonitorTable Component]
-          </div>
+          <Survey/>
         )}
 
         {activeTab === "custPhones" && (
-          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
-            📱 [TODO: CustPhoneTable Component]
-          </div>
+          <PauseCode/>
         )}
 
         {activeTab === "custInfo" && (
+          <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
+            ℹ️ [TODO: Cust Info]
+          </div>
+        )}
+        {activeTab === "realtime" && (
           <div className="p-8 border border-dashed border-gray-300 rounded-xl text-center text-gray-500">
             ℹ️ [TODO: Cust Info]
           </div>
