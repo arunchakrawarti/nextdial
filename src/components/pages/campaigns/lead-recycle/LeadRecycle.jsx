@@ -1,11 +1,9 @@
 "use client";
-import SearchBox from "@/components/atoms/SearchBox";
-import Badge from "@/components/common/Badge";
 import BasicTable from "@/components/common/BasicTable";
 import Button from "@/components/common/Button";
 import { Pencil, Search } from "lucide-react";
 
-const Statuses = () => {
+const LeadRecycle = () => {
   const columns = [
     {
       label: "Campaign",
@@ -16,10 +14,10 @@ const Statuses = () => {
       key: "name",
     },
     {
-      label: "Statuses",
-      key: "statuses",
-      render: (value) => <Badge text={value} customStyle="capitalize" />,
+      label: "Lead Recycles",
+      key: "lead recycles",
     },
+
     {
       label: "Action",
       key: "action",
@@ -35,52 +33,52 @@ const Statuses = () => {
     {
       campaign: "Sales Campaign",
       name: "Interested",
-      statuses: "Active",
+      leadRecycles: "3 DAYS - 10:00 AM",
     },
     {
       campaign: "Sales Campaign",
       name: "Not Interested",
-      statuses: "Inactive",
+      leadRecycles: "5 DAYS - 11:30 AM",
     },
     {
       campaign: "Support Campaign",
       name: "Call Back",
-      statuses: "Active",
+      leadRecycles: "1 DAY - 09:00 AM",
     },
     {
       campaign: "Support Campaign",
       name: "No Answer",
-      statuses: "Active",
+      leadRecycles: "2 DAYS - 02:00 PM",
     },
     {
       campaign: "Marketing Campaign",
       name: "Lead Generated",
-      statuses: "Active",
+      leadRecycles: "7 DAYS - 10:30 AM",
     },
     {
       campaign: "Marketing Campaign",
       name: "Converted",
-      statuses: "Inactive",
+      leadRecycles: "15 DAYS - 01:00 PM",
     },
     {
       campaign: "Retention Campaign",
       name: "Renewed",
-      statuses: "Active",
+      leadRecycles: "30 DAYS - 11:00 AM",
     },
     {
       campaign: "Retention Campaign",
       name: "Expired",
-      statuses: "Inactive",
+      leadRecycles: "45 DAYS - 03:30 PM",
     },
     {
       campaign: "Collection Campaign",
       name: "Paid",
-      statuses: "Active",
+      leadRecycles: "60 DAYS - 12:00 PM",
     },
     {
       campaign: "Collection Campaign",
       name: "Pending",
-      statuses: "Inactive",
+      leadRecycles: "90 DAYS - 04:00 PM",
     },
   ];
   return (
@@ -89,7 +87,7 @@ const Statuses = () => {
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
             <h2 className="font-lexend font-semibold text-[20px] sm:text-[20px] lg:text-[24px]  text-dark">
-             CUSTOM CAMPAIGN STATUSES LISTING
+              Campaign Lead Recycle Listings
             </h2>
           </div>
         </div>
@@ -109,4 +107,4 @@ const Statuses = () => {
   );
 };
 
-export default Statuses;
+export default LeadRecycle;

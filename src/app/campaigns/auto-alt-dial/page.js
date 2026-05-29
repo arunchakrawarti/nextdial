@@ -1,4 +1,4 @@
-import CampaignidTab from '@/components/pages/campaigns/campaigns-main/campaign-id/CampaignTab'
+import AutoAltTable from '@/components/pages/campaigns/auto-alt-dial/AutoAltTable'
 import MainLayout from '@/components/templates/MainLayout'
 import React, { Suspense } from 'react'
 
@@ -7,8 +7,7 @@ const page = () => {
     <div>
       <MainLayout>
         <Suspense fallback={<div>Loading...</div>}>
-
-        <CampaignidTab/>
+        <AutoAltTable/>
         </Suspense>
       </MainLayout>
     </div>

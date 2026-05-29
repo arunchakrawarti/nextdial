@@ -67,31 +67,31 @@ export const SideBarData = [
           },
           {
             title: "HotKeys",
-            link: "/departments/add-department",
+            link: "/campaigns/hot-keys",
           },
           {
             title: "Lead Recycle",
-            link: "/departments/add-department",
+            link: "/campaigns/lead-recycle",
           },
           {
             title: "Auto-Alt Dial",
-            link: "/departments/add-department",
+            link: "/campaigns/auto-alt-dial",
           },
           {
             title: "List Mix",
-            link: "/departments/add-department",
+            link: "/campaigns/list-mix",
           },
           {
             title: "Pause Codes",
-            link: "/departments/add-department",
+            link: "/campaigns/pause-code",
           },
           {
             title: "Presets",
-            link: "/departments/add-department",
+            link: "/campaigns/presets",
           },
           {
             title: "AC-CID",
-            link: "/departments/add-department",
+            link: "/campaigns/ac-cid",
           },
         ],
         

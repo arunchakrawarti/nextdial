@@ -1,4 +1,4 @@
-import CampaignidTab from '@/components/pages/campaigns/campaigns-main/campaign-id/CampaignTab'
+import LeadRecycle from '@/components/pages/campaigns/lead-recycle/LeadRecycle'
 import MainLayout from '@/components/templates/MainLayout'
 import React, { Suspense } from 'react'
 
@@ -8,7 +8,7 @@ const page = () => {
       <MainLayout>
         <Suspense fallback={<div>Loading...</div>}>
 
-        <CampaignidTab/>
+        <LeadRecycle/>
         </Suspense>
       </MainLayout>
     </div>

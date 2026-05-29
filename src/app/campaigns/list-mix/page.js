@@ -1,4 +1,4 @@
-import CampaignidTab from '@/components/pages/campaigns/campaigns-main/campaign-id/CampaignTab'
+import ListMixTable from '@/components/pages/campaigns/list-mix/ListMixTable'
 import MainLayout from '@/components/templates/MainLayout'
 import React, { Suspense } from 'react'
 
@@ -8,7 +8,8 @@ const page = () => {
       <MainLayout>
         <Suspense fallback={<div>Loading...</div>}>
 
-        <CampaignidTab/>
+
+        <ListMixTable/>
         </Suspense>
       </MainLayout>
     </div>

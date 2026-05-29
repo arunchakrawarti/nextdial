@@ -1,11 +1,9 @@
 "use client";
-import SearchBox from "@/components/atoms/SearchBox";
-import Badge from "@/components/common/Badge";
 import BasicTable from "@/components/common/BasicTable";
 import Button from "@/components/common/Button";
 import { Pencil, Search } from "lucide-react";
 
-const Statuses = () => {
+const AcCidTable = () => {
   const columns = [
     {
       label: "Campaign",
@@ -16,14 +14,13 @@ const Statuses = () => {
       key: "name",
     },
     {
-      label: "Statuses",
-      key: "statuses",
-      render: (value) => <Badge text={value} customStyle="capitalize" />,
+      label: "Custom Cid",
+      key: "customCid",
     },
     {
       label: "Action",
       key: "action",
-      render: (row) => (
+      render: () => (
         <Button href="/campaigns/campaigns-main/campaign-id" variant="ghost">
           <Pencil size={16} />
         </Button>
@@ -34,53 +31,53 @@ const Statuses = () => {
   const data = [
     {
       campaign: "Sales Campaign",
-      name: "Interested",
-      statuses: "Active",
+      name: "Morning Shift",
+      customCid: "+1 212-555-1001",
     },
     {
       campaign: "Sales Campaign",
-      name: "Not Interested",
-      statuses: "Inactive",
+      name: "Evening Shift",
+      customCid: "+1 212-555-1002",
     },
     {
       campaign: "Support Campaign",
-      name: "Call Back",
-      statuses: "Active",
+      name: "Customer Care",
+      customCid: "+1 310-555-2001",
     },
     {
       campaign: "Support Campaign",
-      name: "No Answer",
-      statuses: "Active",
+      name: "Technical Support",
+      customCid: "+1 310-555-2002",
     },
     {
       campaign: "Marketing Campaign",
-      name: "Lead Generated",
-      statuses: "Active",
+      name: "Lead Generation",
+      customCid: "+1 646-555-3001",
     },
     {
       campaign: "Marketing Campaign",
-      name: "Converted",
-      statuses: "Inactive",
+      name: "Email Campaign",
+      customCid: "+1 646-555-3002",
     },
     {
       campaign: "Retention Campaign",
-      name: "Renewed",
-      statuses: "Active",
+      name: "Renewal Team",
+      customCid: "+1 718-555-4001",
     },
     {
       campaign: "Retention Campaign",
-      name: "Expired",
-      statuses: "Inactive",
+      name: "Loyalty Team",
+      customCid: "+1 718-555-4002",
     },
     {
       campaign: "Collection Campaign",
-      name: "Paid",
-      statuses: "Active",
+      name: "Payment Follow-up",
+      customCid: "+1 917-555-5001",
     },
     {
       campaign: "Collection Campaign",
-      name: "Pending",
-      statuses: "Inactive",
+      name: "Recovery Team",
+      customCid: "+1 917-555-5002",
     },
   ];
   return (
@@ -89,7 +86,7 @@ const Statuses = () => {
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
             <h2 className="font-lexend font-semibold text-[20px] sm:text-[20px] lg:text-[24px]  text-dark">
-             CUSTOM CAMPAIGN STATUSES LISTING
+              CAMPAIGN LEAD AUTO-ALT DIAL LISTINGS
             </h2>
           </div>
         </div>
@@ -109,4 +106,4 @@ const Statuses = () => {
   );
 };
 
-export default Statuses;
+export default AcCidTable;
