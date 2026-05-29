@@ -102,8 +102,8 @@ const AcCidTable = () => {
   return (
     <div className="bg-white rounded-xl border border-light overflow-hidden">
       <div className="px-6 py-4 border-b border-light">
-        <h2 className="font-lexend text-[1.8rem] font-medium text-dark">
-          ADMIN CHANGE LOG: Section Records - CAMPAIGN_AC-CID - outbound
+        <h2 className="heading font-lexend">
+          Admin Change Log: Section Records - Campaign AC-CID - Outbound
         </h2>
       </div>
 

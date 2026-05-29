@@ -11,8 +11,8 @@ const ModifyUser = () => {
   return (
     <div className="w-full  space-y-6">
       <div className="flex items-center gap-3">
-        <h1 className="text-xl font-bold tracking-wide text-black font-lexend uppercase">
-          MODIFY A USERS RECORD
+        <h1 className="heading font-lexend">
+          Modify a Users Record
         </h1>
       </div>
 
@@ -21,7 +21,7 @@ const ModifyUser = () => {
         <div className="bg-white rounded-xl p-6 border border-light space-y-5">
          
           <div className="flex items-center gap-2 pb-3">
-            <h2 className="text-[15px] font-bold text-gray-800">User Information</h2>
+            <h2 className="heading font-lexend">User Information</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -89,7 +89,7 @@ const ModifyUser = () => {
 
         <div className="bg-white rounded-xl p-6 border border-light space-y-5">
           <div className="flex items-center gap-2 pb-3">
-            <h2 className="text-[15px] font-bold text-gray-800">Account Details</h2>
+            <h2 className="heading font-lexend">Account Details</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -7,7 +7,7 @@ const Survey = () => {
   return (
     <div className="bg-white rounded-lg p-6 border-light w-full mt-5">
       <div className="mb-6">
-        <h2 className="font-bold text-dark text-2xl font-lexend tracking-wide uppercase">
+        <h2 className="heading font-lexend">
           Survey Settings for This Campaign
         </h2>
         <p className="text-gray-600 font-lexend text-md mt-1">

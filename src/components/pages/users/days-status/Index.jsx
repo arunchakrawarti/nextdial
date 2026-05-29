@@ -7,7 +7,7 @@ const MainStatus = () => {
     <div>
       <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
         <div>
-          <h1 className="font-lexend font-semibold text-[1.5rem]  text-dark">
+          <h1 className="heading font-lexend">
             Single Agent Daily
           </h1>
 

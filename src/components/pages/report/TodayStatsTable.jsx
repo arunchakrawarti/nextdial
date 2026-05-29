@@ -47,7 +47,7 @@ const TodayStatsTable = () => {
   </div>
 
   <div className="flex items-center justify-between px-4 py-3 border-t border-gray-200">
-    <h2 className="font-lexend font-semibold text-[18px] leading-9 text-gray-800">
+    <h2 className="heading font-lexend">
       Total Stats for Today:
     </h2>
 

@@ -115,6 +115,9 @@
   font-family: var(--font-lexend);
 }
 
+.heading {
+  @apply text-dark font-semibold text-lg sm:text-xl lg:text-2xl;
+}
 
 .scrollbar-hidden {
   scrollbar-width: none;

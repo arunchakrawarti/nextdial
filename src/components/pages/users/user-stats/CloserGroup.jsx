@@ -73,7 +73,7 @@ const Data = [
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 p-4">
           <div>
-            <h2 className="text-lg font-bold text-gray-900">
+            <h2 className="heading font-lexend">
               Closer In-Group Selection Logs
             </h2>
             

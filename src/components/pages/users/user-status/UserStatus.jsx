@@ -7,7 +7,7 @@ const UserStatus = () => {
   return (
     <div className="space-y-5">
       <UserStatsTab/>
-      <h2 className="font-bold text-black text-lg sm:text-2xl tracking-tight font-lexend">
+      <h2 className="heading font-lexend">
         User Status for
       </h2>
       <div className="bg-white border-light rounded-xl p-4 mb-5">

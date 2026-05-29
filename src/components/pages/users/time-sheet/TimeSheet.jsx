@@ -9,7 +9,7 @@ const TimeSheet = () => {
     <div>
         <div className="bg-white rounded-xl border-light p-4 sm:p-6">
       <div className="mb-6">
-        <h2 className="font-bold text-black text-lg sm:text-xl uppercase tracking-tight font-lexend">
+        <h2 className="heading font-lexend">
           Agent Time Sheet For
         </h2>
       </div>

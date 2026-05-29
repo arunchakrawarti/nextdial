@@ -75,7 +75,7 @@ const stats = [
   ];
   return (
     <div>
-      <h1 className="text-black font-semibold text-2xl font-lexend">
+      <h1 className="heading font-lexend">
         System Summary
       </h1>
 

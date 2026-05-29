@@ -90,8 +90,8 @@ const AcCid = () => {
     <div className="w-full space-y-6">
       <div className="bg-white rounded-xl  border-light overflow-hidden">
         <div className="px-6 py-5 border-light">
-          <h2 className="font-lexend font-medium text-[1.5rem] text-dark uppercase">
-            AREACODE CIDS FOR THIS CAMPAIGN
+          <h2 className="heading font-lexend">
+            Areacode Cids For This Campaign
           </h2>
         </div>
 
@@ -102,8 +102,8 @@ const AcCid = () => {
 
       <div className="bg-white rounded-xl border border-light overflow-hidden">
         <div className="flex items-center gap-4 p-6 border-b border-light">
-          <h2 className="font-lexend font-medium text-[1.5rem] text-dark uppercase">
-            ADD NEW AREACODE CID
+          <h2 className="heading font-lexend">
+            Add New Areacode Cid
           </h2>
         </div>
 

@@ -9,8 +9,8 @@ const HotKeys = () => {
     <div className="w-full space-y-6 font-lexend">
       <div className="bg-white rounded-2xl p-4 border-light w-full">
         <div className="mb-4">
-          <h2 className="font-bold text-dark text-lg uppercase text-left">
-            CUSTOM HOT KEYS WITHIN THIS CAMPAIGN
+          <h2 className="heading font-lexend text-left">
+            Custom Hot Keys Within This Campaign
           </h2>
         </div>
 
@@ -26,8 +26,8 @@ const HotKeys = () => {
       </div>
       <div className="bg-white rounded-2xl p-6 border-light w-full">
         <div className="mb-6">
-          <h2 className="font-bold text-dark text-lg tracking-wide uppercase text-left">
-            ADD NEW CUSTOM CAMPAIGN HOT KEY
+          <h2 className="heading font-lexend">
+            Add New Custom Campaign Hot Key
           </h2>
         </div>
 

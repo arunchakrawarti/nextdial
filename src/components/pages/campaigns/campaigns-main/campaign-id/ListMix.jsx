@@ -7,7 +7,7 @@ const ListMix = () => {
   return (
     <div className="bg-white rounded-lg p-6 border-light w-full mt-5">
       <div className="flex items-center gap-2 mb-4">
-        <h2 className="font-bold text-indigo-950 text-xl font-lexend tracking-wide uppercase">
+        <h2 className="heading font-lexend">
           List Mixes For This Campaign
         </h2>
       </div>

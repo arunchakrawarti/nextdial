@@ -47,7 +47,7 @@ const AutoAltNumberDialing = () => {
     <div className="w-full space-y-6 min-h-screen">
       <div className="bg-white rounded-2xl border-light p-4 sm:p-6">
 
-        <h2 className="text-base sm:text-lg font-bold text-slate-800 uppercase mb-4 sm:mb-6 text-left">
+        <h2 className="heading font-lexend mb-4 sm:mb-6 text-left">
           Auto Alt Number Dialing For This Campaign
         </h2>
 
@@ -63,7 +63,7 @@ const AutoAltNumberDialing = () => {
       </div>
       <div className="bg-white rounded-2xl border-light p-4 sm:p-6">
 
-        <h2 className="text-base sm:text-lg font-bold text-slate-800 uppercase mb-4 sm:mb-6 text-left">
+        <h2 className="heading font-lexend mb-4 sm:mb-6 text-left">
           Add New Auto Alt Number Dialing Status
         </h2>
 

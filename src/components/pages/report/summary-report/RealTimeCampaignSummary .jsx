@@ -26,7 +26,7 @@ const RealTimeCampaignSummary = () => {
   return (
     <div className="w-full bg-white border-light px-4 py-3 rounded-xl mt-5">
       <div className="mb-4">
-        <h2 className="text-[18px] font-semibold text-black">
+        <h2 className="heading font-lexend">
           Real-Time Campaign Summary
         </h2>
       </div>

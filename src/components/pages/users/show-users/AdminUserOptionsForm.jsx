@@ -12,7 +12,7 @@ const AdminUserOptionsForm = () => {
         
         <div className="bg-primary px-6 py-4 flex items-center gap-2">
           <i className="ri-settings-4-line text-white text-xl"></i>
-          <h2 className="text-white font-lexend font-bold text-base tracking-wide uppercase">
+          <h2 className="heading font-lexend">
             Admin Options
           </h2>
         </div>
@@ -55,7 +55,7 @@ const AdminUserOptionsForm = () => {
           </div>
           <div className="space-y-4">
             <div className="bg-primary px-4 py-2 rounded-md">
-              <h3 className="text-white font-lexend font-semibold text-xs uppercase tracking-wider">
+              <h3 className="heading font-lexend">
                 Admin Interface Options
               </h3>
             </div>
@@ -118,7 +118,7 @@ const AdminUserOptionsForm = () => {
 
           <div className="space-y-4">
             <div className="bg-primary px-4 py-2 rounded-md">
-              <h3 className="text-white font-lexend font-semibold text-xs uppercase tracking-wider">
+              <h3 className="heading font-lexend">
                 Security Options, Only Enable If Needed
               </h3>
             </div>
@@ -134,7 +134,7 @@ const AdminUserOptionsForm = () => {
           </div>
           <div className="space-y-4">
             <div className="bg-primary px-4 py-2 rounded-md">
-              <h3 className="text-white font-lexend font-semibold text-xs uppercase tracking-wider">
+              <h3 className="heading font-lexend">
                 API User Options, Only Enable If Needed
               </h3>
             </div>
@@ -164,7 +164,7 @@ const AdminUserOptionsForm = () => {
           </div>
           <div className="space-y-4">
             <div className="bg-primary px-4 py-2 rounded-md">
-              <h3 className="text-white font-lexend font-semibold text-xs uppercase tracking-wider">
+              <h3 className="heading font-lexend">
                 Disable Admin and Agent Screen Options
               </h3>
             </div>

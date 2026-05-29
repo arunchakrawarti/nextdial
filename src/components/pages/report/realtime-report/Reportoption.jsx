@@ -14,7 +14,7 @@ export default function Reportoption({ isOpen, onClose }) {
     >
       <div className="p-6 font-lexend">
         <div className="mb-6 border-b border-gray-100 pb-4">
-          <h2 className="text-xl font-bold text-gray-800">
+          <h2 className="heading font-lexend">
             Report Display Options
           </h2>
           <p className="text-xs text-gray-400 mt-1">

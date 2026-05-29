@@ -8,7 +8,7 @@ const AgentId = () => {
           <i className="ri-user-line text-3xl text-gray-400"></i>
         </div>
 
-        <h3 className="text-lg md:text-lg font-medium text-gray-600 font-lexend">
+        <h3 className="heading font-lexend">
           Please select an Agent ID and date range above and click Submit
         </h3>
 

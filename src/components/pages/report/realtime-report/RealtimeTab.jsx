@@ -53,7 +53,7 @@ const ReportTabs = () => {
               onClick={() => toggleTab(tab.id)}
               className={`px-4 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-200 rounded-xl py-2 ${
                 openTabs[tab.id]
-                  ? "bg-white text-black shadow-md"
+                  ? "bg-primary text-black shadow-md"
                   : "text-gray-600 hover:text-black"
               }`}
             >

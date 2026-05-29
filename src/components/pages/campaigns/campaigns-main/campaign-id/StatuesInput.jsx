@@ -9,7 +9,7 @@ const StatuesInput = () => {
     <div className="bg-white rounded-lg p-6 border-light w-full mt-5">
       
       <div className="mb-4">
-        <h2 className="font-bold text-black text-xl font-lexend">
+        <h2 className="heading font-lexend">
           Add New Custom Campaign Status
         </h2>
       </div>

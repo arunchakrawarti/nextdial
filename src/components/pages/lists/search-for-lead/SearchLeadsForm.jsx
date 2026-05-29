@@ -11,7 +11,7 @@ const SearchLeadsForm = () => {
     
         <div className="bg-white rounded-xl p-4 border-light">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-lg font-bold text-dark font-lexend">
+            <h2 className="heading font-lexend">
               Lead Search Options
             </h2>
           </div>

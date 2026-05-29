@@ -10,7 +10,7 @@ const LeadRecycle = () => {
       <div className="bg-white rounded-xl p-6 border-light w-full">
         <div className="flex items-center gap-3 mb-4">
           <div className="flex items-center gap-2">
-            <h2 className="font-bold text-dark text-lg uppercase tracking-wide">
+            <h2 className="heading font-lexend">
               Lead Recycling Within This Campaign
             </h2>
           </div>
@@ -27,7 +27,7 @@ const LeadRecycle = () => {
 
       <div className="bg-white rounded-2xl p-6 border-light w-full space-y-5">
         <div className="flex items-center gap-3 mb-2">
-          <h2 className="font-bold text-dark text-lg uppercase tracking-wide">
+          <h2 className="heading font-lexend">
             Add New Campaign Lead Recycle
           </h2>
         </div>

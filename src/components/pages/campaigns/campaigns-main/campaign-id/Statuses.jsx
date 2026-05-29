@@ -197,7 +197,7 @@ const CampaignStatusesTable = () => {
   return (
     <div className="p-6 bg-white border-light rounded-xl min-h-screen">
       <div className="mb-4 flex items-center gap-2">
-        <h2 className="text-lg font-bold text-gray-800 tracking-wide font-lexend uppercase">
+        <h2 className="heading font-lexend">
           Custom Statuses Within This Campaign
         </h2>
         <span className="bg-blue-100 text-blue-600 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold cursor-pointer">

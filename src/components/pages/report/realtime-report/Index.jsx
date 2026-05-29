@@ -14,7 +14,7 @@ const MainrealTime = () => {
       <div className="w-full bg-light-gray rounded-xl border-light px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex flex-col lg:flex-row lg:items-center gap-4">
           <div className="flex items-center gap-4 shrink-0">
-            <h1 className="text-lg sm:text-xl font-semibold text-dark whitespace-nowrap">
+            <h1 className="heading font-lexend whitespace-nowrap">
               Real-Time Main Report
             </h1>
 

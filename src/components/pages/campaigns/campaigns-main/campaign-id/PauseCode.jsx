@@ -64,15 +64,15 @@ const PauseCode = () => {
   return (
     <div className="flex flex-col gap-6">
       <div className="bg-white rounded-xl p-6 border border-light w-full">
-        <h2 className="font-bold text-dark text-xl font-lexend tracking-wider uppercase mb-6">
-          AGENT PAUSE CODES FOR THIS CAMPAIGN
+        <h2 className="heading font-lexend mb-6">
+          Agent Pause Codes For This Campaign
         </h2>
 
         <BasicTable columns={columns} data={pauseCodes} pagination={false} />
       </div>
       <div className="bg-white rounded-2xl p-6 border border-light w-full">
-        <h2 className="font-bold text-dark text-xl font-lexend tracking-wider uppercase mb-6">
-          ADD NEW AGENT PAUSE CODE
+        <h2 className="heading font-lexend mb-6">
+          Add New Agent Pause Code
         </h2>
 
         <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

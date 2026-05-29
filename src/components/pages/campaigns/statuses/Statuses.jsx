@@ -88,8 +88,8 @@ const Statuses = () => {
       <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6 p-4">
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
-            <h2 className="font-lexend font-semibold text-[20px] sm:text-[20px] lg:text-[24px]  text-dark">
-             CUSTOM CAMPAIGN STATUSES LISTING
+            <h2 className="heading font-lexend">
+             Custom Campaign Statuses Listing
             </h2>
           </div>
         </div>

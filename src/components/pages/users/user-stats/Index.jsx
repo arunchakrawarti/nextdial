@@ -26,7 +26,7 @@ const MainUser = () => {
       <UserStatsTab/>
       <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
         <div>
-          <h1 className="font-lexend font-semibold text-[1.5rem]  text-dark">
+          <h1 className="heading font-lexend">
             User Stats Report
           </h1>
 

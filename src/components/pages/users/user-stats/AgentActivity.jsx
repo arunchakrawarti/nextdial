@@ -163,7 +163,7 @@ const Data = [
       <div className="bg-white border-light rounded-2xl  overflow-hidden">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 p-4">
           <div>
-            <h2 className="text-lg font-bold text-gray-900">
+            <h2 className="heading font-lexend">
               Agent Activity for this time period
             </h2>
           </div>

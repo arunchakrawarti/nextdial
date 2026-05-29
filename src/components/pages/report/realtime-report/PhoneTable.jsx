@@ -174,7 +174,7 @@ const Data = [
       <div className="bg-white border-light rounded-2xl  overflow-hidden mt-5">
         <div className="p-4">
           <div>
-            <h2 className="text-lg font-bold text-gray-900">
+            <h2 className="heading font-lexend">
               Agents Time On Calls Campaign
             </h2>
           </div>

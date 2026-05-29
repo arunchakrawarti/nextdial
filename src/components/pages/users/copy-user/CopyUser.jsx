@@ -7,7 +7,7 @@ const CopyUser = () => {
   return (
     <div className="bg-white rounded-lg p-4 border-light">
       <div className="mb-6">
-        <h2 className="font-bold text-black text-xl uppercase tracking-tight font-lexend">
+        <h2 className="heading font-lexend">
           Copy User
         </h2>
       </div>

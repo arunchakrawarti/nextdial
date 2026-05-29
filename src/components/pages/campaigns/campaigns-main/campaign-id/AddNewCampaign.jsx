@@ -7,7 +7,7 @@ const AddNewCampaign = () => {
   return (
     <div className="bg-white rounded-lg p-6 border border-light max-w-7xl mx-auto my-6">
       <div className="mb-8 border-b pb-4">
-        <h2 className="font-bold text-black text-2xl uppercase tracking-tight font-lexend">
+        <h2 className="heading font-lexend">
           Add a New Campaign (Complete Settings)
         </h2>
       </div>

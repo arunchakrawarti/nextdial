@@ -9,9 +9,8 @@ const MainSingleAgent = () => {
   return (
     <div className="space-y-6">
       <div className="rounded-2xl border border-light bg-white p-4 sm:p-6">
-        {/* Header */}
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <h2 className="font-lexend text-xl sm:text-2xl font-semibold text-dark">
+          <h2 className="heading font-lexend">
             Single Agent Daily
           </h2>
 
@@ -89,7 +88,6 @@ const MainSingleAgent = () => {
           />
         </div>
 
-        {/* Checkbox */}
         <div className="mt-6">
           <Input
             type="checkbox"
@@ -97,7 +95,6 @@ const MainSingleAgent = () => {
           />
         </div>
 
-        {/* Submit */}
         <div className="mt-8 flex justify-stretch sm:justify-end">
           <Button
             variant="gradient"
