@@ -103,15 +103,15 @@ export const SideBarData = [
         children: [
           {
             title: "Show Lists",
-            link: "",
+            link: "/list/show-lists",
           },
           {
             title: "Add A New List",
-            link: "/attendance/report",
+            link: "/list/add-new-lists",
           },
           {
             title: "Search For A Lead",
-            link: "/attendance/report",
+            link: "/list/search-for-lead",
           },
           {
             title: "Add A New Lead",
