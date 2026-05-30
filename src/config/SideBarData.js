@@ -115,45 +115,45 @@ export const SideBarData = [
           },
           {
             title: "Add A New Lead",
-            link: "/attendance/report",
+            link: "/list/add-new-lead",
           },
           {
             title: "Add-Delete DNC Number",
-            link: "/attendance/report",
+            link: "/list/add-delete-dnc-number",
           },
           {
             title: "Load New Leads",
-            link: "/attendance/report",
+            link: "/list/load-new-leads",
           },
         ],
       },
 
       {
-        title: "Payroll",
+        title: "Scripts",
         icon: "ri-money-dollar-circle-line",
         children: [
           {
-            title: "Salary List",
-            link: "/payroll/salary-list",
+            title: "Show Scripts",
+            link: "/scripts/show-scripts",
           },
           {
-            title: "Generate Salary",
-            link: "/payroll/generate-salary",
+            title: "Add A New Scripts",
+            link: "/scripts/add-new-scripts",
           },
         ],
       },
 
       {
-        title: "Jobs",
+        title: "Filters",
         icon: "ri-briefcase-4-line",
         children: [
           {
-            title: "All Jobs",
-            link: "/jobs/all-jobs",
+            title: "Show Filters",
+            link: "/filters/show-filters",
           },
           {
-            title: "Post Job",
-            link: "/jobs/post-job",
+            title: "Add A New Filter",
+            link: "/filters/add-new-filter",
           },
         ],
       },

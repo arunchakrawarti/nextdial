@@ -8,7 +8,6 @@ const SearchLeadsForm = () => {
   return (
     <div className="w-full flex flex-col gap-6 font-sans">
       <form className="w-full flex flex-col gap-6">
-    
         <div className="bg-white rounded-xl p-4 border-light">
           <div className="flex items-center gap-3 mb-6">
             <h2 className="heading font-lexend">

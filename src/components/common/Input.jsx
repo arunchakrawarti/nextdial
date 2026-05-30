@@ -48,7 +48,7 @@ const Input = ({
         >
           {icon && <i className={`${icon} ri-lg text-gray-400`} />}
           <textarea
-            className="w-full outline-none text-sm bg-transparent font-lexend"
+            className="w-full outline-none text-gray-400 text-sm bg-transparent font-lexend"
             {...rest}
           />
         </div>
