@@ -4,11 +4,14 @@ import BasicGroupInfo from "./BasicGroupInfo";
 import QueueAndCallbackSettings from "./QueueAndCallbackSettings";
 import AdvancedGroupSettings from "./AdvancedGroupSettings";
 import Button from "@/components/common/Button"
+import AgentRanksTable from "./AgentRanksTable";
+import InboundGroupInfo from "./InboundGroupInfo";
 
 
 const ModifyInboundGroupForm = () => {
   return (
-    <div className="bg-white rounded-lg p-6 mt-5 border border-gray-200">
+    <div>
+      <div className="bg-white rounded-lg p-6 mt-5 border border-gray-200">
       <div className="mb-6 border-b pb-4">
         <h2 className="heading font-lexend text-xl font-bold text-gray-800">
           MODIFY A GROUPS RECORD: AGENTDIRECT
@@ -25,6 +28,9 @@ const ModifyInboundGroupForm = () => {
           </Button>
         </div>
       </form>
+    </div>
+      <AgentRanksTable/>
+      <InboundGroupInfo/>
     </div>
   );
 };

@@ -60,9 +60,6 @@ const LeadFilterList = () => {
   return (
     <div className="w-full mt-5 space-y-4">
       <div className="space-y-1">
-        <h2 className="heading font-lexend">
-          LEAD FILTER NOT FOUND: DROP72HOUR
-        </h2>
 
         <h3 className="font-lexend font-semibold text-base text-gray-800">
           LEAD FILTER LISTINGS:

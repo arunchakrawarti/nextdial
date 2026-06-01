@@ -168,15 +168,15 @@ export const SideBarData = [
           },
           {
             title: "Add A New In-Group",
-            link: "/candidates/shortlisted",
+            link: "/inbound/add-new-group",
           },
            {
             title: "Copy In-Group",
-            link: "/candidates/shortlisted",
+            link: "/inbound/copy-ingroup",
           },
            {
             title: "Show DIDs",
-            link: "/candidates/shortlisted",
+            link: "/inbound/show-dids",
           },
            {
             title: "Add A New DID",
