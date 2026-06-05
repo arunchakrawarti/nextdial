@@ -214,16 +214,24 @@ export const SideBarData = [
       },
 
       {
-        title: "Leaves",
+        title: "User Groups",
         icon: "ri-file-list-3-line",
         children: [
           {
-            title: "Leave Requests",
-            link: "/leaves/leave-requests",
+            title: "Show User Groups",
+            link: "/user-group/show-user-group",
           },
           {
-            title: "Approved Leaves",
-            link: "/leaves/approved-leaves",
+            title: "Add A New User Group",
+            link: "/user-group/add-user-group",
+          },
+          {
+            title: "Group Hourly Report",
+            link: "/user-group/group-hourly-report",
+          },
+          {
+            title: "Bulk Group Change",
+            link: "/user-group/bulk-group-change",
           },
         ],
       },
