@@ -84,7 +84,7 @@ const NavigationLink = ({ title, icon, link, children = [] }) => {
       {hasChildren && (
         <div
           className={`overflow-hidden transition-all duration-300 ${
-            open ? "max-h-96 mt-2" : "max-h-0"
+            open ? "max-h-auto mt-2" : "max-h-0"
           }`}
         >
           <ul className="ml-6 space-y-2">

@@ -237,32 +237,114 @@ export const SideBarData = [
       },
 
       {
-        title: "Holidays",
+        title: "remote-agents",
         icon: "ri-calendar-event-line",
         children: [
           {
-            title: "Holiday List",
-            link: "/holidays/list",
+            title: "Show Remote Agents",
+            link: "/remote-agents/show-remote-agents",
           },
           {
-            title: "Add Holiday",
-            link: "/holidays/add-holiday",
+            title: "Add New Remote Agents",
+            link: "/remote-agents/add-new-remote",
+          },
+          {
+            title: "Show Extension Group",
+            link: "/remote-agents/show-extension-group",
+          },
+          {
+            title: "Add Extension Group",
+            link: "/remote-agents/add-extension-group",
           },
         ],
       },
 
       {
-        title: "Settings",
+        title: "Admin",
         icon: "ri-settings-3-line",
+         link: "/admin",
         children: [
           {
-            title: "General Settings",
-            link: "/settings/general-settings",
+            title: "Admin",
+            link: "/admin/admin",
           },
           {
-            title: "Account Settings",
+            title: "Call Times",
+            link: "/admin/call-times",
+          },
+          {
+            title: "Shifts",
             link: "/settings/account-settings",
           },
+          {
+            title: "Phones",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Templates",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Carriers",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Servers",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Conferences",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "System Settings",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Screen Labels",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Screen Colors",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "System Statuses",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Status Groups",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "CID Groups",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Voicemail",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Audio Store",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Music On Hold",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "VM Message Groups",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Settings Containers",
+            link: "/settings/account-settings",
+          },
+          {
+            title: "Queue Groups",
+            link: "/settings/account-settings",
+          },
+          
         ],
       },
     ],
