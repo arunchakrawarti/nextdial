@@ -278,7 +278,7 @@ export const SideBarData = [
           },
           {
             title: "Phones",
-            link: "/settings/account-settings",
+            link: "/admin/phones",
           },
           {
             title: "Templates",
