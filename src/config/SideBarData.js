@@ -286,7 +286,7 @@ export const SideBarData = [
           },
           {
             title: "Carriers",
-            link: "/settings/account-settings",
+            link: "/admin/carriers",
           },
           {
             title: "Servers",
