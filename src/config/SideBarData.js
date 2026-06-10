@@ -274,7 +274,7 @@ export const SideBarData = [
           },
           {
             title: "Shifts",
-            link: "/settings/account-settings",
+            link: "/admin/shift",
           },
           {
             title: "Phones",

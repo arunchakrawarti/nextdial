@@ -1,0 +1,18 @@
+import ShiftTab from '@/components/pages/admin/shift/ShiftTab'
+import MainLayout from '@/components/templates/MainLayout'
+import React, { Suspense } from 'react'
+
+const page = () => {
+  return (
+    <div>
+      <MainLayout>
+        <Suspense fallback={<div>Loading...</div>}>
+
+        <ShiftTab/>
+        </Suspense>
+      </MainLayout>
+    </div>
+  )
+}
+
+export default page
