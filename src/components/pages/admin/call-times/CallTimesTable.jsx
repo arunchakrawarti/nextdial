@@ -29,7 +29,7 @@ const CallTimesTable = () => {
       label: "Modify",
       key: "modify",
       render: (_, row) => (
-        <Button variant="gradient">
+        <Button href="/admin/call-times/modify" variant="gradient">
           Modify
         </Button>
       ),
