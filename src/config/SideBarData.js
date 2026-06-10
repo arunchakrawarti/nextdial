@@ -282,7 +282,7 @@ export const SideBarData = [
           },
           {
             title: "Templates",
-            link: "/settings/account-settings",
+            link: "/admin/templates",
           },
           {
             title: "Carriers",

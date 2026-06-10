@@ -1,4 +1,4 @@
-import PhoneTab from '@/components/pages/admin/phones/PhoneTab'
+import TemplateTab from '@/components/pages/admin/templates/TemplateTab'
 import MainLayout from '@/components/templates/MainLayout'
 import React, { Suspense } from 'react'
 
@@ -7,7 +7,8 @@ const page = () => {
     <div>
       <MainLayout>
         <Suspense fallback={<div>Loading...</div>}>
-        <PhoneTab/>
+
+        <TemplateTab/>
         </Suspense>
       </MainLayout>
     </div>
