@@ -290,7 +290,7 @@ export const SideBarData = [
           },
           {
             title: "Servers",
-            link: "/settings/account-settings",
+            link: "/admin/servers",
           },
           {
             title: "Conferences",
