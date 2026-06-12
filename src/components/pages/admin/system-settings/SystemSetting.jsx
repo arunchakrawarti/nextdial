@@ -39,7 +39,7 @@ const SystemSetting = () => {
 
           </div>
           <div className="p-4 text-primary">
-            <a href="#" className="text-sm text-blue-600 hover:underline font-medium">
+            <a href="/report/admin-change" className="text-sm text-blue-600 hover:underline font-medium">
               Click here to see Admin changes to the system settings
             </a>
           </div>

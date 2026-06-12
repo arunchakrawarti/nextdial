@@ -306,7 +306,7 @@ export const SideBarData = [
           },
           {
             title: "Screen Colors",
-            link: "/settings/account-settings",
+            link: "/admin/screen-color",
           },
           {
             title: "System Statuses",
