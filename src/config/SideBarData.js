@@ -314,7 +314,7 @@ export const SideBarData = [
           },
           {
             title: "Status Groups",
-            link: "/settings/account-settings",
+            link: "/admin/status-group",
           },
           {
             title: "CID Groups",
