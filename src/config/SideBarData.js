@@ -294,7 +294,7 @@ export const SideBarData = [
           },
           {
             title: "Conferences",
-            link: "/settings/account-settings",
+            link: "/admin/conferences",
           },
           {
             title: "System Settings",
