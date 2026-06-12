@@ -40,7 +40,7 @@ const SystemLabels = () => {
           <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">
             Field Custom Labels
           </h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <Input type="text" label="Label Title" placeholder="Title" />
             <Input
               type="text"

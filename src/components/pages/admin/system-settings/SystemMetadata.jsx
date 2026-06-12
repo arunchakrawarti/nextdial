@@ -5,8 +5,6 @@ import Input from "@/components/common/Input";
 const SystemMetadata = () => {
   return (
     <div className="w-full bg-white p-4">
-
-      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Input type="text" label="Version" defaultValue="2.14b0.5" disabled />
         <Input type="text" label="SVN Version" defaultValue="3972" disabled />

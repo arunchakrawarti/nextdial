@@ -302,7 +302,7 @@ export const SideBarData = [
           },
           {
             title: "Screen Labels",
-            link: "/settings/account-settings",
+            link: "/admin/screen-label",
           },
           {
             title: "Screen Colors",

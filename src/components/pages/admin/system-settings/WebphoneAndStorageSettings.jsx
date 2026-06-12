@@ -5,13 +5,10 @@ import Input from "@/components/common/Input";
 const WebphoneAndStorageSettings = () => {
   return (
     <div className="w-full bg-white p-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-gray-100 pt-4">
         <Input type="select" label="Admin Screen Colors" defaultValue="default" options={[{ label: "default", value: "default" }]} />
         <Input type="select" label="Agent Screen Colors" defaultValue="default" options={[{ label: "default", value: "default" }]} />
         <Input type="select" label="Agent Chat Screen Colors" defaultValue="default" options={[{ label: "default", value: "default" }]} />
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-gray-100 pt-4">
         <Input type="text" label="Default Codecs" placeholder="ulaw, alaw" />
         <Input type="text" label="Webphone URL" defaultValue="https://phone.viciphone.com/v3.0/viciphone.php" />
         <Input type="text" label="Webphone System Key" placeholder="Enter System Key" />

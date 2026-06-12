@@ -39,7 +39,7 @@ const SecurityAndSecurityPasswords = () => {
       </div>
       <div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-1">
             <Input type="text" label="Default Phone Registration Password" defaultValue="test1243" />
           </div>
