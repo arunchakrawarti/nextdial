@@ -318,7 +318,7 @@ export const SideBarData = [
           },
           {
             title: "CID Groups",
-            link: "/settings/account-settings",
+            link: "/admin/cid-group",
           },
           {
             title: "Voicemail",
