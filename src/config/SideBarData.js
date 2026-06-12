@@ -310,7 +310,7 @@ export const SideBarData = [
           },
           {
             title: "System Statuses",
-            link: "/settings/account-settings",
+            link: "/admin/system-statuses",
           },
           {
             title: "Status Groups",
