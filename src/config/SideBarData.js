@@ -298,7 +298,7 @@ export const SideBarData = [
           },
           {
             title: "System Settings",
-            link: "/settings/account-settings",
+            link: "/admin/system-settings",
           },
           {
             title: "Screen Labels",
