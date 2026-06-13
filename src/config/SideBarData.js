@@ -338,7 +338,7 @@ export const SideBarData = [
           },
           {
             title: "Settings Containers",
-            link: "/settings/account-settings",
+            link: "/admin/setting-container",
           },
           {
             title: "Queue Groups",
