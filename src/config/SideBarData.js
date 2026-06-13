@@ -159,61 +159,6 @@ export const SideBarData = [
       },
 
       {
-        title: "Inbound",
-        icon: "ri-user-search-line",
-        children: [
-          {
-            title: "Show In-groups",
-            link: "/inbound/show-ingroup",
-          },
-          {
-            title: "Add A New In-Group",
-            link: "/inbound/add-new-group",
-          },
-           {
-            title: "Copy In-Group",
-            link: "/inbound/copy-ingroup",
-          },
-           {
-            title: "Show DIDs",
-            link: "/inbound/show-dids",
-          },
-           {
-            title: "Add A New DID",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Copy DID",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Show Call Menus",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Add A New Call Menu",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Copy Call Menu",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Filter Phone Group",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Add Filter Phone Group",
-            link: "/candidates/shortlisted",
-          },
-           {
-            title: "Add Delete FPG Number",
-            link: "/candidates/shortlisted",
-          },
-        ],
-      },
-
-      {
         title: "User Groups",
         icon: "ri-file-list-3-line",
         children: [

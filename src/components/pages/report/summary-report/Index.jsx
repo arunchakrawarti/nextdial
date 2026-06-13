@@ -11,13 +11,12 @@ const MainSummary = () => {
     { name: "Reports", href: "/" },
     { name: "Users", href: "/users/show-user" },
     { name: "Campaigns", href: "/campaigns/campaigns-main" },
-    { name: "Lists", href: "/lists" },
-    { name: "Scripts", href: "/scripts" },
-    { name: "Filters", href: "/filters" },
-    { name: "Inbound", href: "/inbound" },
-    { name: "User Groups", href: "/user-groups" },
-    { name: "Remote Agents", href: "/remote-agents" },
-    { name: "Admin", href: "/admin" },
+    { name: "Lists", href: "/list/show-lists" },
+    { name: "Scripts", href: "/scripts/show-scripts" },
+    { name: "Filters", href: "/filters/show-filters" },
+    { name: "User Groups", href: "/user-group/show-user-group" },
+    { name: "Remote Agents", href: "/remote-agents/show-remote-agents" },
+    { name: "Admin", href: "/admin/admin" },
   ];
 
   return (

@@ -67,10 +67,9 @@ const ShowUserTable = () => {
 
   return (
     <div className="w-full bg-white rounded-2xl border border-gray-200 overflow-hidden">
-      {/* Header */}
       <div className="p-6 flex items-start gap-4 border-b">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900">User Groups</h2>
+          <h2 className="text-3xl font-bold text-dark">User Groups</h2>
           <p className="text-gray-500 mt-1">
             Manage and view user groups in the system.
           </p>
