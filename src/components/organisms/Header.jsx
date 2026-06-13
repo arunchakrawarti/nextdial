@@ -6,86 +6,98 @@ import { Bell, Search } from "lucide-react";
 
 export default function Header({ onMenuClick }) {
   return (
-    <header className="sticky top-0 z-30 w-full bg-white ">
+    <header className="sticky top-0 z-30 w-full bg-white">
 
-      <div className="flex flex-wrap items-center justify-between gap-[1rem] px-[1rem] sm:px-[1.25rem] lg:px-[1.5rem] py-[1rem]">
+      <div className="flex items-center justify-between gap-3 px-4 sm:px-5 lg:px-6 py-4">
 
-        <div className="flex items-center gap-[0.75rem] min-w-0 flex-1">
+        {/* Left Section */}
+        <div className="flex items-center gap-3 min-w-0 flex-1">
 
-          
+          {/* Mobile Menu */}
           <Button
             onClick={onMenuClick}
-            className="flex h-[2.75rem] w-[2.75rem] shrink-0 items-center justify-center rounded-[0.75rem] border border-[#ECECEE] bg-white text-black lg:hidden"
+            className="flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#ECECEE] bg-white text-black"
           >
-            <i className="ri-menu-2-line text-[1.25rem]"></i>
+            <i className="ri-menu-2-line text-xl"></i>
           </Button>
 
-         
+          {/* Heading */}
           <div className="min-w-0">
-            <h2 className="truncate font-lexend font-semibold text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[1.5rem] lg:leading-[2rem] text-black">
+            <h2 className="truncate font-lexend font-semibold text-base sm:text-xl lg:text-2xl text-black">
               Hello Robert 👋🏻
             </h2>
 
-            <p className="font-lexend font-light text-[0.75rem] sm:text-[0.875rem] leading-[1.25rem] text-[#A2A1A8]">
+            <p className="font-lexend font-light text-xs sm:text-sm text-[#A2A1A8]">
               Good Morning
             </p>
           </div>
         </div>
 
-       
-        <div className="flex items-center gap-[0.5rem] sm:gap-[1rem] w-full sm:w-auto justify-end">
+        {/* Right Section */}
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
 
-         
-          <div className="hidden md:block w-full sm:w-[16rem] lg:w-[20rem]">
+          {/* Desktop Search */}
+          <div className="hidden md:block w-[220px] lg:w-[320px] xl:w-[380px]">
             <SearchBox
               name="search"
               iconLeft={Search}
-              placeholder="Search"
+              placeholder="Search here..."
               className="w-full"
             />
           </div>
 
-         
-          <button className="flex md:hidden w-[2.75rem] h-[2.75rem] rounded-[0.75rem] border border-[#ECECEE] items-center justify-center bg-white">
+          {/* Mobile Search */}
+          <button className="flex md:hidden h-11 w-11 rounded-xl border border-[#ECECEE] items-center justify-center bg-white shrink-0">
             <Search
               size={18}
               className="text-black"
             />
           </button>
 
-          
-          <button className="w-[2.75rem] h-[2.75rem] sm:w-[3rem] sm:h-[3rem] rounded-[0.75rem] border border-[#ECECEE] flex items-center justify-center bg-white shrink-0">
+          {/* Notification */}
+          <button className="h-11 w-11 sm:h-12 sm:w-12 rounded-xl border border-[#ECECEE] flex items-center justify-center bg-white shrink-0">
             <Bell
               size={18}
               className="text-black"
             />
           </button>
 
-          
-          <div className="flex items-center gap-[0.5rem] sm:gap-[0.75rem] px-[0.5rem] sm:px-[0.5rem] py-[0.4rem] sm:py-[0.2rem] rounded-[0.75rem] border border-[#ECECEE] bg-white cursor-pointer shrink-0">
+          {/* Profile */}
+          <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1.5 rounded-xl border border-[#ECECEE] bg-white cursor-pointer shrink-0 max-w-full">
 
-            
+            {/* Profile Image */}
             <img
               src="https://i.pravatar.cc/100"
               alt="profile"
-              className="w-[2.25rem] h-[2.25rem] sm:w-[2.5rem] sm:h-[2.5rem] rounded-[0.5rem] object-cover"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg object-cover shrink-0"
             />
 
-           
-            <div className="hidden sm:block">
-              <h4 className="font-lexend font-medium text-[0.8125rem] sm:text-[0.875rem] leading-[1.25rem] text-black">
+            {/* User Info */}
+            <div className="hidden sm:block min-w-0">
+              <h4 className="truncate font-lexend font-medium text-sm text-black">
                 Robert Allen
               </h4>
 
-              <p className="font-lexend font-light text-[0.6875rem] sm:text-[0.75rem] leading-[1rem] text-[#A2A1A8]">
+              <p className="truncate font-lexend font-light text-xs text-[#A2A1A8]">
                 HR Manager
               </p>
             </div>
 
-            <i className="ri-arrow-down-s-line text-[1.125rem] sm:text-[1.25rem] text-[#16151C]"></i>
+            {/* Arrow */}
+            <i className="ri-arrow-down-s-line text-lg sm:text-xl text-[#16151C] shrink-0"></i>
           </div>
 
         </div>
+      </div>
+
+      {/* Mobile Search Bar */}
+      <div className="block md:hidden px-4 pb-4">
+        <SearchBox
+          name="search"
+          iconLeft={Search}
+          placeholder="Search here..."
+          className="w-full"
+        />
       </div>
     </header>
   );
