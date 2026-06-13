@@ -334,7 +334,7 @@ export const SideBarData = [
           },
           {
             title: "VM Message Groups",
-            link: "/settings/account-settings",
+            link: "/admin/vm-message-group",
           },
           {
             title: "Settings Containers",
