@@ -7,13 +7,13 @@ import { Bell, Search } from "lucide-react";
 export default function Header({ onMenuClick }) {
   return (
     <header className="sticky top-0 z-30 w-full bg-white">
-
       <div className="flex items-center justify-between gap-3 px-4 sm:px-5 lg:px-6 py-4">
 
         <div className="flex items-center gap-3 min-w-0 flex-1">
+
           <Button
             onClick={onMenuClick}
-            className="flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#ECECEE] bg-white text-black"
+            className="flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-light bg-white text-black"
           >
             <i className="ri-menu-2-line text-xl"></i>
           </Button>
@@ -28,7 +28,7 @@ export default function Header({ onMenuClick }) {
           </div>
         </div>
         <div className="flex items-center gap-2 sm:gap-4 shrink-0">
-          <div className="hidden md:block w-[220px] lg:w-[320px] xl:w-[380px]">
+          <div className="hidden lg:block w-[320px] xl:w-[380px]">
             <SearchBox
               name="search"
               iconLeft={Search}
@@ -36,25 +36,20 @@ export default function Header({ onMenuClick }) {
               className="w-full"
             />
           </div>
-          <button className="flex md:hidden h-11 w-11 rounded-xl border border-[#ECECEE] items-center justify-center bg-white shrink-0">
-            <Search
-              size={18}
-              className="text-black"
-            />
-          </button>
-          <button className="h-11 w-11 sm:h-12 sm:w-12 rounded-xl border border-[#ECECEE] flex items-center justify-center bg-white shrink-0">
+          <button className="h-11 w-11 sm:h-13 sm:w-12 rounded-xl border-light flex items-center justify-center bg-white shrink-0">
             <Bell
               size={18}
               className="text-black"
             />
           </button>
-          <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1.5 rounded-xl border border-[#ECECEE] bg-white cursor-pointer shrink-0 max-w-full">
+          <div className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1 rounded-xl  border-light bg-white cursor-pointer shrink-0">
 
             <img
               src="https://i.pravatar.cc/100"
               alt="profile"
               className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg object-cover shrink-0"
             />
+
             <div className="hidden sm:block min-w-0">
               <h4 className="truncate font-lexend font-medium text-sm text-black">
                 Robert Allen
@@ -64,12 +59,13 @@ export default function Header({ onMenuClick }) {
                 HR Manager
               </p>
             </div>
+
             <i className="ri-arrow-down-s-line text-lg sm:text-xl text-[#16151C] shrink-0"></i>
           </div>
 
         </div>
       </div>
-      <div className="block md:hidden px-4 pb-4">
+      <div className="block lg:hidden px-4 pb-4">
         <SearchBox
           name="search"
           iconLeft={Search}
