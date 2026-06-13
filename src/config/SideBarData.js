@@ -330,7 +330,7 @@ export const SideBarData = [
           },
           {
             title: "Music On Hold",
-            link: "/settings/account-settings",
+            link: "/admin/music-hold",
           },
           {
             title: "VM Message Groups",
