@@ -342,7 +342,7 @@ export const SideBarData = [
           },
           {
             title: "Queue Groups",
-            link: "/settings/account-settings",
+            link: "/admin/queue-group",
           },
           
         ],
