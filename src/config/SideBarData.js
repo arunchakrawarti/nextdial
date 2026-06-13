@@ -322,11 +322,11 @@ export const SideBarData = [
           },
           {
             title: "Voicemail",
-            link: "/settings/account-settings",
+            link: "/admin/voicemail",
           },
           {
             title: "Audio Store",
-            link: "/settings/account-settings",
+            link: "/admin/audio-store",
           },
           {
             title: "Music On Hold",
