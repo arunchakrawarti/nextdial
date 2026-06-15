@@ -18,7 +18,7 @@ const LeadTab = () => {
     {
       id: 3,
       label: "Campaigns",
-      path: "campaigns/campaigns-main",
+      path: "/campaigns/campaigns-main",
     },
     {
       id: 4,
@@ -28,32 +28,27 @@ const LeadTab = () => {
     {
       id: 4,
       label: "Scripts",
-      path: "/users/time-sheet",
+      path: "/scripts/show-scripts",
     },
     {
       id: 4,
       label: "Filters",
-      path: "/users/time-sheet",
-    },
-    {
-      id: 4,
-      label: "Inbound",
-      path: "/users/time-sheet",
+      path: "/filters/show-filters",
     },
     {
       id: 4,
       label: "User Group",
-      path: "/users/time-sheet",
+      path: "/user-group/show-user-group",
     },
     {
       id: 4,
       label: "Agent Remote",
-      path: "/users/time-sheet",
+      path: "/remote-agents/show-remote-agents",
     },
     {
       id: 4,
       label: "Admin",
-      path: "/users/time-sheet",
+      path: "/admin/admin",
     },
   ];
 

@@ -8,7 +8,7 @@ const SideBar = ({ isMobile = false, isOpen = true, onClose }) => {
     const [mounted, setMounted] = useState(false);
 
   const [theme, setTheme] = useState("light");
-
+  
   useEffect(() => {
 
     setMounted(true);

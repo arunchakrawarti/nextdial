@@ -182,7 +182,7 @@ export const SideBarData = [
       },
 
       {
-        title: "remote-agents",
+        title: "Remote-Agents",
         icon: "ri-calendar-event-line",
         children: [
           {
