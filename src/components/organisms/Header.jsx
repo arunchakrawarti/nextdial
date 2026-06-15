@@ -8,9 +8,7 @@ export default function Header({ onMenuClick }) {
   return (
     <header className="sticky top-0 z-30 w-full bg-white">
       <div className="flex items-center justify-between gap-3 px-4 sm:px-5 lg:px-6 py-4">
-
         <div className="flex items-center gap-3 min-w-0 flex-1">
-
           <Button
             onClick={onMenuClick}
             className="flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-light bg-white text-black"
@@ -21,7 +19,6 @@ export default function Header({ onMenuClick }) {
             <h2 className="truncate font-lexend font-semibold text-base sm:text-xl lg:text-2xl text-black">
               Hello Robert 👋🏻
             </h2>
-
             <p className="font-lexend font-light text-xs sm:text-sm text-[#A2A1A8]">
               Good Morning
             </p>
