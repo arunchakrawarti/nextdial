@@ -61,8 +61,8 @@ const ListCallbackTable = () => {
   return (
     <div className="w-full flex flex-col gap-4 font-sans">
       <div className=" border-light rounded-lg">
-        <h2 className="text-xl font-medium p-4 text-gray-800 tracking-wide uppercase">
-        LIST CALLBACK HOLD LISTINGS: <span className="font-semibold">998</span>
+        <h2 className="text-xl font-medium p-4 text-gray-800 tracking-wide font-lexend uppercase">
+        List Callback Hold Listings <span className="font-semibold">998</span>
       </h2>
         <BasicTable
           columns={columns}

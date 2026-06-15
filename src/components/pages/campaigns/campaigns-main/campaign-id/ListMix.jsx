@@ -11,14 +11,14 @@ const ListMix = () => {
           List Mixes For This Campaign
         </h2>
       </div>
-      <div className="bg-amber-50 border border-amber-200 text-amber-700 p-4 rounded-md flex items-center gap-2 mb-8 text-sm font-medium">
+      <div className="bg-amber-50 border border-amber-200 text-amber-700 p-4 rounded-md flex items-center gap-2 mb-8 text-sm font-medium font-lexend">
         <span>
           WARNING, we only recommend List Mix for advanced users, Please read
           the Manager Manual
         </span>
       </div>
       <div className="mb-6">
-        <h3 className="font-bold text-dark text-lg uppercase tracking-wider">
+        <h3 className="font-bold text-dark text-lg uppercase font-lexend tracking-wider">
           Add New List Mix
         </h3>
       </div>

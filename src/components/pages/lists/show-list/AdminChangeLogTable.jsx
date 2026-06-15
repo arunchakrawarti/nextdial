@@ -75,7 +75,7 @@ const AdminChangeLogTable = () => {
   return (
     <div className="w-full flex flex-col gap-4 font-sans">
       <h2 className="text-xl font-medium text-dark tracking-wide uppercase">
-        ADMIN CHANGE LOG: Section Records - LISTS - <span className="font-semibold">998</span>
+        Admin Change Log: Section Records - LISTS - <span className="font-semibold">998</span>
       </h2>
       <div className=" border-light rounded-lg">
         <BasicTable

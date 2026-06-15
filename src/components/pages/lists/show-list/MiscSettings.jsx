@@ -8,7 +8,7 @@ const MiscSettings = () => {
     <div className="space-y-6">
       <div className="bg-white rounded-lg border-light overflow-hidden mt-5">
         <div className="px-4 py-2.5 border-b border-slate-200">
-          <h3 className="text-xs font-bold text-dark uppercase tracking-wider">
+          <h3 className="text-xs font-bold text-dark uppercase font-lexend tracking-wider">
             Misc Settings
           </h3>
         </div>

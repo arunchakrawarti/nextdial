@@ -5,7 +5,7 @@ const CallbacksUrlsSection = () => {
   return (
     <div>
       <div>
-        <h3 className="text-sm font-semibold uppercase text-gray-500 tracking-wider mb-4 border-l-4 border-blue-500 pl-2">
+        <h3 className="text-sm font-semibold uppercase text-gray-500 tracking-wider mb-4 border-l-4 font-lexend border-blue-500 pl-2">
           Callbacks, Custom URLs & Blind Monitor Settings
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

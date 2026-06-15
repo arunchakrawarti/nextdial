@@ -1,5 +1,4 @@
 "use client";
-import SearchBox from "@/components/atoms/SearchBox";
 import Badge from "@/components/common/Badge";
 import BasicTable from "@/components/common/BasicTable";
 import Button from "@/components/common/Button";

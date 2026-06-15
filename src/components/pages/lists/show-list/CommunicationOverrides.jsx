@@ -6,7 +6,7 @@ const CommunicationOverrides = () => {
   return (
     <div className="bg-white rounded-lg border-light overflow-hidden mt-5">
       <div className="px-4 py-2.5 border-b border-slate-200">
-        <h3 className="text-xs font-bold text-dark uppercase tracking-wider">
+        <h3 className="text-xs font-bold text-dark font-lexend uppercase tracking-wider">
           Communication Overrides
         </h3>
       </div>
