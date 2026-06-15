@@ -7,11 +7,9 @@ import Button from "@/components/common/Button";
 const Addusersgroup = () => {
   return (
     <div className="w-full bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
-
-      {/* Header */}
       <div className="px-4 sm:px-6 lg:px-8 py-5 sm:py-6">
         
-        <h2 className="heading text-[22px] sm:text-[26px] lg:text-[30px]">
+        <h2 className="heading font-lexend">
           Add New Users Group
         </h2>
 

@@ -103,7 +103,7 @@ const DeleteUsergroupTable = () => {
     <div className="w-full bg-white border-light rounded-xl">
       
       <div className="mb-3 p-4">
-        <h2 className="heading">
+        <h2 className="heading font-lexend">
           User Groups
         </h2>
 

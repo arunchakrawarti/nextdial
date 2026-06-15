@@ -92,10 +92,9 @@ const UserGroupTable = () => {
   return (
     <div>
         <div className="w-full bg-white rounded-2xl border border-gray-200 overflow-hidden">
-      {/* Header */}
       <div className="p-6 flex items-start gap-4 border-b">
         <div>
-          <h2 className="heading">
+          <h2 className="heading font-lexend">
             USER GROUP CALLBACK HOLD LISTINGS:
           </h2>
         </div>

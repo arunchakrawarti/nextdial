@@ -8,7 +8,7 @@ const AddExtensionGroupEntry = () => {
   return (
     <div className="w-full bg-white rounded-xl border-light overflow-hidden">
       <div className="p-4">
-        <h2 className="heading text-[20px] sm:text-[24px]">
+        <h2 className="heading font-lexend">
           Add Extension Group Entry
         </h2>
       </div>

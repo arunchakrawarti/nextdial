@@ -8,16 +8,15 @@ const ModifyAgentPermissions = () => {
     <div className="space-y-8 mt-5">
       <div className="bg-white rounded-xl overflow-hidden border-light">
         <div className="px-8 py-5 border-b">
-          <h2 className="uppercase text-sm font-semibold tracking-widest text-dark">
+          <h2 className="heading font-lexend">
             Agent Status & Permissions
           </h2>
         </div>
 
         <div className="p-6">
-          {/* Checkbox Section */}
           <div className="mb-8">
             <label className="block mb-4 text-sm font-medium text-gray-800">
-              Agent Status Viewable Groups ?
+              Agent Status Viewable Groups 
             </label>
 
             <div className="space-y-3">
@@ -94,7 +93,7 @@ const ModifyAgentPermissions = () => {
       </div>
       <div className="bg-white rounded-xl overflow-hidden border-light">
         <div className="px-8 py-5 border-b">
-          <h2 className="uppercase text-sm font-semibold tracking-widest text-gray-500">
+          <h2 className="heading font-lexend">
             Agent Transfer Options
           </h2>
         </div>

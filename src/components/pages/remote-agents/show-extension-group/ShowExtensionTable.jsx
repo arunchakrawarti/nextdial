@@ -124,8 +124,8 @@ const ShowExtensionTable = () => {
   return (
     <div className="w-full bg-white border-light rounded-xl">
       <div className="mb-3 p-4">
-        <h2 className="heading">
-          EXTENSION GROUP LISTINGS:
+        <h2 className="heading font-lexend">
+          Extension Group Listings
         </h2>
       </div>
       <div className="rounded-xl overflow-hidden border-light">

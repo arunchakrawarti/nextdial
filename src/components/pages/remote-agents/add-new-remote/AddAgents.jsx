@@ -7,35 +7,27 @@ import Button from "@/components/common/Button";
 const AddAgents = () => {
   return (
     <div className="w-full bg-white rounded-xl border-light overflow-hidden">
-      
-      {/* Heading */}
       <div>
-        <h2 className="heading uppercase text-[20px] sm:text-[24px] md:text-[28px] p-4">
+        <h2 className="heading font-lexend p-4">
           Add New Remote Agents
         </h2>
       </div>
 
-      {/* Form */}
       <div className="p-4 sm:p-5 md:p-6">
 
-        {/* 2 Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
-          {/* User ID Start */}
           <Input
             label="User ID Start"
             type="text"
             placeholder="Enter User ID"
           />
-
-          {/* Number of Lines */}
           <Input
             label="Number of Lines"
             type="text"
             placeholder="Enter Number of Lines"
           />
 
-          {/* Server IP */}
           <Input
             label="Server IP"
             type="select"
@@ -51,15 +43,11 @@ const AddAgents = () => {
               },
             ]}
           />
-
-          {/* External Extension */}
           <Input
             label="External Extension"
             type="text"
             placeholder="Enter Extension"
           />
-
-          {/* Status */}
           <Input
             label="Status"
             type="select"
@@ -69,8 +57,6 @@ const AddAgents = () => {
               { label: "INACTIVE", value: "inactive" },
             ]}
           />
-
-          {/* Campaign */}
           <Input
             label="Campaign"
             type="select"
@@ -83,8 +69,6 @@ const AddAgents = () => {
           />
 
         </div>
-
-        {/* Inbound Groups */}
         <div className="mt-6">
           
           <label className="font-semibold mb-3 text-[12px] text-gray-600 uppercase tracking-wider font-lexend block">
@@ -105,8 +89,6 @@ const AddAgents = () => {
 
           </div>
         </div>
-
-        {/* Submit Button */}
         <div className="flex justify-center sm:justify-end pt-6">
           <Button
             variant="gradient"

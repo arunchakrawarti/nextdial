@@ -10,12 +10,12 @@ const ModifyUsersGroupEntry = () => {
   return (
     <div className="bg-white font-lexend">
       <div className="rounded-xl border-light p-6">
-        <h1 className="text-2xl font-semibold text-dark uppercase mb-6">
-        MODIFY A USERS GROUP ENTRY
+        <h1 className="heading font-lexend mb-6">
+        Modify a Users Group Entry
       </h1>
       <div className="border rounded-xl overflow-hidden mb-8">
         <div className="bg-gray-50 px-6 py-4 border-b">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-600">
+          <h2 className="heading font-lexend">
             Basic Settings
           </h2>
         </div>
@@ -70,7 +70,7 @@ const ModifyUsersGroupEntry = () => {
 
       <div className="border rounded-xl overflow-hidden border-light mt-5">
         <div className=" px-6 py-4 border-b">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-600">
+          <h2 className="heading font-lexend">
             Campaigns & Shifts
           </h2>
         </div>

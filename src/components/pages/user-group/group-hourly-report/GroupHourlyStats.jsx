@@ -9,7 +9,7 @@ const GroupHourlyStats = () => {
     <div className="bg-white rounded-xl border-light overflow-hidden">
       <div className="flex items-center gap-5 p-8 ">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="heading font-lexend">
             Group Hourly Stats
           </h2>
           <p className="text-gray-500 mt-1">

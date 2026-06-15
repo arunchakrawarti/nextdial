@@ -8,7 +8,7 @@ const ChatReporting = () => {
     <div className="space-y-8 mt-5">
       <div className="bg-white rounded-xl overflow-hidden border-light">
         <div className="px-8 py-5 border-b">
-          <h2 className="uppercase text-sm font-semibold tracking-widest text-dark">
+          <h2 className="heading font-lexend">
             Chat & Reporting
           </h2>
         </div>
@@ -66,8 +66,6 @@ const ChatReporting = () => {
                 checkboxLabel="ALL-GROUPS - USERS CAN VIEW ANY QUEUE GROUP"
               />
             </div>
-
-            {/* Reports Header Override */}
             <Input
               label="Reports Header Override ?"
               type="select"
@@ -80,11 +78,9 @@ const ChatReporting = () => {
           </div>
         </div>
       </div>
-
-      {/* URL & WEBPHONE OVERRIDES */}
       <div className="bg-white rounded-xl overflow-hidden border-light">
         <div className="px-8 py-5 border-b">
-          <h2 className="uppercase text-sm font-semibold tracking-widest text-gray-500">
+          <h2 className="heading font-lexend">
             URL & Webphone Overrides
           </h2>
         </div>

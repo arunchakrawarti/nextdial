@@ -128,7 +128,7 @@ const data = [
   return (
     <div className="w-full bg-white border-light rounded-xl ">
       <div className="mb-3">
-        <h2 className="heading p-4">
+        <h2 className="heading font-lexend p-4">
           Scripts Listings
         </h2>
       </div>

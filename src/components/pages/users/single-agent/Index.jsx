@@ -30,8 +30,6 @@ const MainSingleAgent = () => {
             </Button>
           </div>
         </div>
-
-        {/* Form */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 mt-6">
           <Input label="DATE FROM" type="date" />
 

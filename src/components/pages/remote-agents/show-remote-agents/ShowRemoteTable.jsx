@@ -124,12 +124,11 @@ const ShowRemoteTable = () => {
   return (
     <div className="w-full bg-white border-light rounded-xl">
       <div className="mb-3 p-4">
-        <h2 className="heading">
-          REMOTE AGENTS LISTINGS:
+        <h2 className="heading font-lexend">
+          Remote Agents Listings
         </h2>
       </div>
 
-      {/* Table */}
       <div className="rounded-xl overflow-hidden border-light">
         <BasicTable
           columns={columns}

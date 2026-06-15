@@ -73,7 +73,7 @@ const ChatReportingTable = () => {
       
       <div className="bg-white rounded-xl overflow-hidden border border-gray-200">
         <div className="px-8 py-5 border-b">
-          <h2 className="uppercase text-sm font-semibold tracking-widest text-gray-500">
+          <h2 className="heading font-lexend">
             Visibility & Access
           </h2>
         </div>
@@ -81,7 +81,7 @@ const ChatReportingTable = () => {
         <div className="p-6">
           <div className="space-y-4">
             <label className="block text-sm font-medium text-gray-700">
-              Allowed User Groups ?
+              Allowed User Groups 
             </label>
 
             <div className="space-y-3">
@@ -154,14 +154,11 @@ const ChatReportingTable = () => {
       </div>
 
      <div className="bg-white rounded-xl overflow-hidden border border-gray-200">
-  {/* Heading */}
   <div className="px-4 sm:px-6 lg:px-8 py-5 border-b flex items-center gap-3">
-    <h2 className="uppercase text-xs sm:text-sm font-semibold tracking-widest text-gray-700">
+    <h2 className="heading font-lexend">
       Users Within This User Group
     </h2>
   </div>
-
-  {/* Table */}
   <div className="overflow-x-auto">
     <BasicTable
       columns={userColumns}
@@ -169,16 +166,11 @@ const ChatReportingTable = () => {
       pagination={false}
     />
   </div>
-
-  {/* Form Section */}
   <div className="p-4 sm:p-6 border-t border-gray-200">
-    
-    {/* Section Heading */}
-    <h2 className="uppercase text-xs sm:text-sm font-semibold tracking-widest text-gray-700 mb-5 leading-6">
+  
+    <h2 className="font-lexend heading mb-5">
       Add or Remove In-Group Selected For Active Users in This User Group
     </h2>
-
-    {/* Inputs */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <Input
         label="Add"
@@ -201,7 +193,6 @@ const ChatReportingTable = () => {
       />
     </div>
 
-    {/* Button */}
     <div className="mt-6">
       <Button variant="gradient">
         Submit

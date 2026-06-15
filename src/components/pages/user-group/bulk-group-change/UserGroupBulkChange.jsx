@@ -8,13 +8,13 @@ const UserGroupBulkChange = () => {
   return (
     <div className="w-full bg-white rounded-xl border-light overflow-hidden">
       <div className="p-4 sm:p-5 md:p-6 border-b border-gray-200">
-        <h2 className="heading uppercase text-[20px] sm:text-[24px] md:text-[28px]">
-          USER GROUP BULK CHANGE
+        <h2 className="heading font-lexend">
+          User Group Bulk Change
         </h2>
       </div>
       <div className="p-4 sm:p-5 md:p-6">
 
-        <h3 className="heading mb-6">
+        <h3 className="heading font-lexend mb-6">
           Change Users in this group
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -60,7 +60,7 @@ const UserGroupBulkChange = () => {
     
       <div className="p-4 sm:p-5 md:p-6">
 
-        <h3 className="text-lg sm:text-xl font-semibold text-dark mb-6">
+        <h3 className="text-lg sm:text-xl font-semibold font-lexend text-dark mb-6">
           Change ALL non-Admin Users to this group
         </h3>
         <div className="w-full">

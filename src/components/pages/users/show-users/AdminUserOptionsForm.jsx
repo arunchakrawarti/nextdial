@@ -21,7 +21,7 @@ const AdminUserOptionsForm = () => {
           
           <div className="space-y-4">
             <div className="bg-primary px-4 py-2 rounded-md">
-              <h3 className="text-white font-lexend font-semibold text-xs uppercase tracking-wider">
+              <h3 className="heading font-lexend">
                 Admin Report Options
               </h3>
             </div>

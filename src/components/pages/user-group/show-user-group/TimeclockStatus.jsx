@@ -78,7 +78,7 @@ const TimeclockStatus = () => {
   return (
     <div className="w-full bg-white border-light rounded-2xl shadow-sm overflow-hidden">
       <div className="px-4 sm:px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-        <h2 className="text-lg sm:text-xl font-bold text-dark">
+        <h2 className="heading font-lexend">
           Timeclock Status for ADMIN
         </h2>
 
@@ -137,10 +137,8 @@ const TimeclockStatus = () => {
 
         </div>
       </div>
-
-      {/* Table Heading */}
       <div className="px-4 sm:px-6 pt-6 flex flex-col sm:flex-row items-center gap-2 text-center">
-        <h3 className="heading">
+        <h3 className="heading font-lexend">
           User Status for User Group: {selectedGroup}
         </h3>
 
