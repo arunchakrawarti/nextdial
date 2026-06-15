@@ -100,7 +100,7 @@ const QueueTable = () => {
 
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          QUEUE LISTINGS
+          Queue Listings
         </h2>
       </div>
 

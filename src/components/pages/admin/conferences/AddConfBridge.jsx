@@ -10,7 +10,7 @@ const AddConfBridge = () => {
         
         <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
           <h2 className="heading text-center sm:text-left">
-           ADD A NEW AGENT CONFBRIDGE
+           Add a New Agent Confbridge
           </h2>
         </div>
 

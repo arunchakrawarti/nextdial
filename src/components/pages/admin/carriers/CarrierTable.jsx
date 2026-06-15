@@ -127,7 +127,7 @@ const CarrierTable = () => {
       
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          CARRIER LISTINGS
+          Carrier Listings
         </h2>
       </div>
 

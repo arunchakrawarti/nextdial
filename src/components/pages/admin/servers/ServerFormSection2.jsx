@@ -31,7 +31,6 @@ const carrierColumns = [
 
   return (
     <div className="space-y-8">
-      {/* इमेज 3 के फ़ील्ड्स */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Input label="Conf Qualify" type="select" name="confQualify" options={[{ label: "Y - Yes", value: "Y" }]} />
         <Input label="Recording Web Link" type="select" name="recordingWebLink" options={[{ label: "SERVER_IP", value: "SERVER_IP" }]} />
@@ -90,7 +89,7 @@ const carrierColumns = [
           </div>
         </div>
         <div className="bg-white rounded-xl border border-light overflow-hidden shadow-sm">
-          <div className="p-3 border-b border-gray-200 bg-gray-50 text-center font-bold text-xs uppercase text-gray-700">
+          <div className="p-3 border-b font-lexend border-gray-200 bg-gray-50 text-center font-bold text-xs uppercase text-gray-700">
             Carriers Within This Server
           </div>
           <BasicTable columns={carrierColumns} data={carrierData} pagination={false} />

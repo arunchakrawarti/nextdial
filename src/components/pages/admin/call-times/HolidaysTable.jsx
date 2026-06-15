@@ -146,7 +146,7 @@ const HolidaysTable = () => {
     <div className="bg-white rounded-2xl border border-light overflow-hidden mt-5">
       <div className="flex items-center gap-2 px-5 py-4 border-b border-light">
         <h2 className="heading font-lexend">
-          HOLIDAY LISTINGS
+          Holiday Listings
         </h2>
       </div>
 

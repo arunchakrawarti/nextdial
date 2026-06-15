@@ -89,7 +89,7 @@ const ConfBridgeTable = () => {
       
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          AGENT CONFBRIDGE LISTINGS
+          Agent Confbridge Listings
         </h2>
       </div>
 

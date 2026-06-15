@@ -71,7 +71,7 @@ const CallTimesTable = () => {
     <div className="bg-white rounded-xl border-light space-y-4 mt-5">
       <div className="flex items-center gap-1.5 p-4">
         <h2 className="heading font-lexend">
-          CALL TIME LISTINGS
+          Call Time Listings
         </h2>
       </div>
 

@@ -9,8 +9,8 @@ const AddVmMessage = () => {
     <div className="w-full border-light rounded-md overflow-hidden mt-5 bg-white">
         
       <div className="px-4 py-4">
-        <h2 className="heading">
-          ADD NEW VM MESSAGE GROUP
+        <h2 className="heading font-lexend">
+          Add New Vm Message Group
         </h2>
       </div>
 

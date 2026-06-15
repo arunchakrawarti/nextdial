@@ -8,8 +8,8 @@ const AddCidGroup = () => {
     <section className="w-full  py-4 sm:py-6">
       <div className="w-full bg-white border border-light rounded-2xl overflow-hidden shadow-sm">
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-5 border-b border-gray-200">
-          <h2 className="heading">
-           ADD NEW CID GROUP
+          <h2 className="heading font-lexend">
+           Add New Cid Group
           </h2>
         </div>
         <div className="w-full p-4 sm:p-6 lg:p-8 xl:p-10">

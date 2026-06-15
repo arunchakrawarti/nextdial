@@ -175,7 +175,7 @@ const ModifyStateCallTimeForm = () => {
             SUBMIT
           </Button>
         </div>
-        <h1 className="text-dark">USER GROUPS USING THIS SHIFT:</h1>
+        <h1 className="text-dark font-lexend">User Groups Using This Shift</h1>
       </div>
       <div className="border-t border-gray-200 bg-white px-4 sm:px-6 lg:px-8 py-8">
 

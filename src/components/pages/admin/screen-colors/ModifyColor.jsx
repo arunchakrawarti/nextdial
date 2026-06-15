@@ -11,18 +11,13 @@ const ModifyScreenColors = () => {
 
   return (
     <div className="w-full bg-white border border-light rounded-2xl overflow-hidden mt-5">
-      
-      {/* Header */}
+    
       <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
         <h2 className="heading font-lexend break-words">
-          MODIFY SCREEN COLORS: basic_orange
+          Modify Screen Colors: basic_orange
         </h2>
       </div>
-
-      {/* Main Section */}
       <div className="p-4 sm:p-6 lg:p-8">
-
-        {/* Color ID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
           <Input
             label="Colors ID"
@@ -154,8 +149,6 @@ const ModifyScreenColors = () => {
             defaultValue="#efefef"
           />
         </div>
-
-        {/* Submit Button */}
         <div className="flex justify-center pt-6">
           <Button
             variant="gradient"
@@ -165,13 +158,9 @@ const ModifyScreenColors = () => {
           </Button>
         </div>
       </div>
-
-      {/* Bottom Section */}
       <div className="border-t border-gray-200 bg-white px-4 sm:px-6 lg:px-8 py-8">
 
         <div className="flex flex-col items-start sm:items-center gap-4">
-
-          {/* Delete Button */}
           <button
             type="button"
             onClick={() =>
@@ -187,13 +176,13 @@ const ModifyScreenColors = () => {
           {showDeleteConfirm && (
   <div className="w-full border-light bg-white rounded-xl p-4 sm:p-5 space-y-3">
 
-    <h1 className="text-sm sm:text-base font-bold uppercase text-black tracking-wide">
+    <h1 className="text-sm sm:text-base font-bold uppercase text-black tracking-wide font-lexend">
       SCREEN COLOR DELETION CONFIRMATION:
       basic_orange
     </h1>
 
     <Link href="/admin/screen-color">
-    <p className="text-sm sm:text-base text-primary font-medium">
+    <p className="text-sm sm:text-base text-primary font-medium font-lexend">
       Click here to delete screen color
       basic_orange
     </p>
@@ -202,7 +191,7 @@ const ModifyScreenColors = () => {
   </div>
 )}
           <Link href="/report/admin-change">
-            <span className="text-primary hover:underline text-sm font-medium text-left sm:text-center inline-block cursor-pointer">
+            <span className="text-primary hover:underline text-sm font-medium text-left sm:text-center inline-block cursor-pointer font-lexend">
               Click here to see Admin changes to
               this screen color
             </span>

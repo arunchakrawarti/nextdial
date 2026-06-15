@@ -9,8 +9,8 @@ const AddMusichold = () => {
     <div className="w-full border-light rounded-md overflow-hidden mt-5 bg-white">
         
       <div className="px-4 py-4">
-        <h2 className="heading">
-          ADD NEW MUSIC ON HOLD ENTRY
+        <h2 className="heading font-lexend">
+          Add New Music On Hold Entry
         </h2>
       </div>
 

@@ -117,8 +117,6 @@ const ModifyMusic = () => {
             </Button>
           </div>
         </div>
-
-        {/* Bottom Section */}
         <div className="bg-white flex flex-col py-10 text-center space-y-6">
 
           <button
@@ -131,12 +129,12 @@ const ModifyMusic = () => {
 
           {showDeleteConfirm && (
             <div className="w-full bg-white border border-light rounded-xl p-5">
-              <p className="text-primary font-semibold mb-3">
+              <p className="text-primary font-semibold font-lexend mb-3">
                 Are you sure you want to delete this entry?
               </p>
 
               <Link href="/admin/music-hold">
-                <button className="text-primary font-bold hover:underline">
+                <button className="text-primary font-bold font-lexend hover:underline">
                   Click here to confirm delete
                 </button>
               </Link>
@@ -144,7 +142,7 @@ const ModifyMusic = () => {
           )}
 
           <Link href="/report/admin-change">
-            <span className="text-indigo-600 font-semibold hover:underline cursor-pointer inline-block">
+            <span className="text-indigo-600 font-semibold hover:underline cursor-pointer font-lexend inline-block">
               Click here to see Admin changes to this Music On Hold entry
             </span>
           </Link>

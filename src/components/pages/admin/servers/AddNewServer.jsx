@@ -10,7 +10,7 @@ const AddNewServer = () => {
         
       <div className="px-4 py-4">
         <h2 className="heading">
-          ADD A NEW SERVER
+          Add a New Server
         </h2>
       </div>
 

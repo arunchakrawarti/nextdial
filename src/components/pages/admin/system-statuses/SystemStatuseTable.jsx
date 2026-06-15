@@ -284,8 +284,6 @@ const SystemStatuseTable = () => {
         </div>
       ),
     },
-
-    // MODIFY BUTTON
     {
       label: "MODIFY",
       key: "modify",
@@ -351,7 +349,7 @@ const SystemStatuseTable = () => {
     
       <div className="p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          SYSTEM STATUS DELETED: AA
+          System Status Deleted
         </h2>
       </div>
       <div className="overflow-x-auto">

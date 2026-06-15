@@ -113,7 +113,7 @@ const MusicTable = () => {
     <div className="bg-white rounded-xl border border-light space-y-4 mt-5 overflow-hidden">
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          VoiceMail Table
+          Music HOld Table
         </h2>
       </div>
 

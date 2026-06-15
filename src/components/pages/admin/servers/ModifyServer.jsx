@@ -14,7 +14,7 @@ const ModifyServer = () => {
         
         <div className="px-6 py-5 border-b border-gray-200 bg-white">
           <h2 className="heading font-lexend">
-            MODIFY A SERVER RECORD:
+            Modify a Server Record
           </h2>
         </div>
 
@@ -30,7 +30,7 @@ const ModifyServer = () => {
             
             <button
               type="button"
-              className="text-blue-600 hover:underline font-bold text-xs uppercase tracking-wide"
+              className="text-blue-600 hover:underline font-bold text-xs uppercase tracking-wide font-lexend"
             >
               CLEAR ALL AGENT CONFERENCES
             </button>
@@ -44,14 +44,14 @@ const ModifyServer = () => {
             </button>
             {showDeleteConfirm && (
               <div className="w-full border border-red-200 bg-red-50 rounded-xl p-4 space-y-2">
-                <h4 className="text-xs font-bold uppercase text-red-700 tracking-wider">
+                <h4 className="text-xs font-bold uppercase text-red-700 tracking-wider font-lexend">
                   SERVER DELETION CONFIRMATION: Server-ABC123
                 </h4>
 
                 <Link href="/admin/servers">
                 <button
                   type="button"
-                  className="text-xs font-bold text-blue-600 hover:text-red-700 underline cursor-pointer bg-transparent border-none p-0 text-left"
+                  className="text-xs font-bold text-blue-600 hover:text-red-700 underline cursor-pointer bg-transparent border-none p-0 text-left font-lexend"
                 >
                   Click here to confirm delete server Server-ABC123
                 </button>
@@ -60,7 +60,7 @@ const ModifyServer = () => {
             )}
 
             <Link href="/report/admin-change">
-              <span className="text-blue-600 hover:underline text-xs font-semibold inline-block">
+              <span className="text-blue-600 hover:underline text-xs font-semibold inline-block font-lexend">
                 Click here to see Admin changes to this server
               </span>
             </Link>

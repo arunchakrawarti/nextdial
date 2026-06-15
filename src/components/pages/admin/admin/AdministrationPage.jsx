@@ -122,7 +122,7 @@ const AdministrationPage = () => {
   return (
     <section className="w-full min-h-screen bg-white p-6">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-dark">
+        <h1 className="text-4xl font-bold text-dark font-lexend">
           Administration
         </h1>
       </div>
@@ -141,7 +141,7 @@ const AdministrationPage = () => {
                   <Icon size={32} strokeWidth={1.8} />
                 </div>
 
-                <h2 className="text-lg font-medium text-dark">
+                <h2 className="text-lg font-medium text-dark font-lexend">
                   {item.title}
                 </h2>
               </div>

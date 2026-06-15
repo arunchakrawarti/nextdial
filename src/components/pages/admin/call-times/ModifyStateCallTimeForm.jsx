@@ -10,7 +10,6 @@ const ModifyStateCallTimeForm = () => {
 
   return (
     <div className="w-full bg-white border border-light rounded-2xl overflow-hidden mt-5">
-      {/* Header */}
       <div className="px-4 sm:px-6 py-5 border-b border-light">
         <h2 className="heading font-lexend">Modify A State Call Time</h2>
       </div>

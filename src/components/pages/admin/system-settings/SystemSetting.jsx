@@ -14,7 +14,7 @@ const SystemSetting = () => {
       <div>
         <div className="mb-6 bg-white  rounded-2xl p-5 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
           <h2 className="heading">
-            MODIFY SYSTEM SETTINGS
+            Modify System Settings
           </h2>
 
         </div>

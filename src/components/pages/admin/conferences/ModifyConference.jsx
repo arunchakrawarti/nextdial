@@ -13,8 +13,8 @@ const ModifyConference = () => {
       <div className="w-full  border-light rounded-2xl overflow-hidden bg-white shadow-sm">
         
         <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
-          <h2 className="heading">
-            MODIFY A CONFERENCE RECORD: 8600002
+          <h2 className="heading font-lexend">
+            Modify a Conference Record: 8600002
           </h2>
         </div>
         <div className="p-4 sm:p-6 lg:p-8">

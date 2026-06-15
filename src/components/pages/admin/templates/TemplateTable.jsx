@@ -78,7 +78,7 @@ const TemplateTable = () => {
     <div className="bg-white rounded-xl border border-light space-y-4 mt-5 overflow-hidden">
       <div className="flex items-center justify-between p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          CONF TEMPLATE LISTINGS
+          Conf Template Listings
         </h2>
       </div>
       <BasicTable

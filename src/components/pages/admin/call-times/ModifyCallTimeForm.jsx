@@ -336,15 +336,15 @@ const ModifyCallTimeForm = () => {
         </div>
         <div className="mt-10 flex flex-col items-start gap-4">
 
-          <button
+          <p
             type="button"
             onClick={() =>
               setShowDeleteConfirm(!showDeleteConfirm)
             }
-            className="text-primary hover:underline text-[16px] sm:text-[18px] font-semibold uppercase text-left transition-all"
+            className="text-primary hover:underline text-[16px] sm:text-[18px] font-semibold uppercase text-left transition-all font-lexend"
           >
             DELETE THIS CALL TIME DEFINITION
-          </button>
+          </p>
 
           {showDeleteConfirm && (
             <div className="w-full border-light rounded-xl bg-white p-4 sm:p-5 space-y-3">

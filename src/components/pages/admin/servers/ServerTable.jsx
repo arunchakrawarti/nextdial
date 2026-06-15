@@ -139,7 +139,7 @@ const ServerTable = () => {
       
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          SERVER LISTINGS
+          Server Listings
         </h2>
       </div>
 

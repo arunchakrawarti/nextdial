@@ -89,7 +89,7 @@ const ConferencesTable = () => {
       
       <div className="flex items-center gap-1.5 p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          CONFERENCE LISTINGS
+          Conference Listings
         </h2>
       </div>
 

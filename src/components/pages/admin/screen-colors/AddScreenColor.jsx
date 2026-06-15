@@ -8,8 +8,8 @@ const AddScreenColor = () => {
     <div className="w-full mt-5">
       <div className="w-full bg-white border border-light rounded-2xl overflow-hidden shadow-sm">
         <div className="px-4 sm:px-6 lg:px-8 py-4 sm:py-5 border-b border-light">
-          <h2 className="heading text-lg sm:text-xl lg:text-2xl">
-            ADD NEW SCREEN COLOR
+          <h2 className="heading text-lg sm:text-xl lg:text-2xl font-lexend">
+            Add New Screen Color
           </h2>
         </div>
         <div className="p-4 sm:p-6 lg:p-8 xl:p-10">

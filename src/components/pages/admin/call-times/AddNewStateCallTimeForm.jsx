@@ -58,7 +58,7 @@ const AddNewStateCallTimeForm = () => {
           />
         </div>
         <div className="pt-8 text-center">
-          <p className="text-[15px] sm:text-[17px] text-dark leading-7">
+          <p className="text-[15px] sm:text-[17px] text-dark font-lexend leading-7">
             Day and time options will appear once you have created the Call Time Definition
           </p>
         </div>

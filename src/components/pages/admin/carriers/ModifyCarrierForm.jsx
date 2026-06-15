@@ -110,8 +110,6 @@ const ModifyCarrierForm = () => {
             ]}
           />
         </div>
-
-        {/* Account Entry */}
         <div className="mt-6">
           <Input
             label="Account Entry"
@@ -152,19 +150,19 @@ const ModifyCarrierForm = () => {
           {showDeleteConfirm && (
             <div className="w-full  border-light bg-white rounded-xl p-4 sm:p-5 space-y-3">
               
-              <h4 className="text-sm font-bold uppercase text-red-700 tracking-wide">
+              <h4 className="text-sm font-bold uppercase text-red-700 tracking-wide font-lexend">
                 CARRIER DELETION CONFIRMATION: 3333
               </h4>
 
               <Link href="/admin/carriers">
-                <span className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium inline-block cursor-pointer">
+                <span className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium inline-block cursor-pointer font-lexend">
                   Click here to delete carrier 3333
                 </span>
               </Link>
             </div>
           )}
           <Link href="/report/admin-change">
-            <span className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium text-left sm:text-center inline-block cursor-pointer">
+            <span className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium text-left sm:text-center inline-block cursor-pointer font-lexend">
               Click here to see Admin changes to this carrier
             </span>
           </Link>

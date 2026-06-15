@@ -8,7 +8,7 @@ const AddSettingContainer = () => {
   return (
     <div className="w-full border-light rounded-md overflow-hidden mt-5 bg-white">
       <div className="px-4 py-4">
-        <h2 className="heading">ADD NEW SETTINGS CONTAINER </h2>
+        <h2 className="heading font-lexend">Add New Settings Container </h2>
       </div>
 
       <div className="p-4 sm:p-6 lg:p-8">

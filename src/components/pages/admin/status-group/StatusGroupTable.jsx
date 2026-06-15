@@ -101,7 +101,7 @@ const StatusGroupTable = () => {
     
       <div className="flex items-center justify-between p-4 border-b border-light">
         <h2 className="heading font-lexend">
-          STATUS GROUP LISTINGS
+          Status Group Listings
         </h2>
       </div>
       <BasicTable

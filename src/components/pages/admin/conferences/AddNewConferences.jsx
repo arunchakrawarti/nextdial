@@ -9,8 +9,8 @@ const AddNewConferences = () => {
       <div className="w-full border border-light rounded-2xl overflow-hidden bg-white shadow-sm">
         
         <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
-          <h2 className="heading text-center sm:text-left">
-           ADD A NEW CONFERENCE
+          <h2 className="heading text-center sm:text-left font-lexend">
+           Add a New Conference
           </h2>
         </div>
 

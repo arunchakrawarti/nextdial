@@ -19,7 +19,7 @@ const AddNewShiftForm = () => {
             Shift ID:
           </span>
 
-          <p className="text-base font-bold text-gray-900 font-lexend break-all">
+          <p className="text-base  font-bold text-gray-900 font-lexend break-all">
             24HRMIDNIGHT
           </p>
         </div>
@@ -146,8 +146,6 @@ const AddNewShiftForm = () => {
             />
           </div>
         </div>
-
-        {/* Submit */}
         <div className="flex justify-end pt-6">
 
           <Button

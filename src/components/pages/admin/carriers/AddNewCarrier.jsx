@@ -6,7 +6,6 @@ import Button from "@/components/common/Button";
 const AddNewCarrier = () => {
   return (
     <div className="w-full bg-white border border-gray-200 rounded-2xl overflow-hidden mt-5">
-    
       <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
         <h2 className="heading font-lexend">
           ADD NEW CARRIER

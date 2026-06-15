@@ -9,7 +9,7 @@ const AudioStore = () => {
     <section className="w-full py-4 sm:py-6 lg:py-8">
       <div className="w-full bg-white border border-light rounded-2xl shadow-sm overflow-hidden">
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-5 border-b border-light">
-          <h2 className="heading break-words">
+          <h2 className="heading font-lexend break-words">
             Audio Store
           </h2>
         </div>
@@ -41,21 +41,21 @@ const AudioStore = () => {
             </div>
           </div>
           <div className="w-full text-center space-y-3 sm:space-y-4 px-1">
-            <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-black leading-snug">
+            <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-black leading-snug font-lexend">
               We STRONGLY recommend uploading only 16bit Mono 8k PCM WAV audio
               files (.wav)
             </h2>
 
-            <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-700 font-medium leading-relaxed font-lexend">
               All spaces will be stripped from uploaded audio file names
             </p>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-primary break-words">
+            <h3 className="text-xl sm:text-2xl font-bold font-lexend text-primary break-words">
               audio file list
             </h3>
           </div>
           <div className="w-full">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-6 sm:mb-8 font-lexend">
               File to Copy
             </h2>
 
@@ -93,7 +93,7 @@ const AudioStore = () => {
           <div className="w-full">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-dark text-center mb-6 sm:mb-8 leading-snug">
               File to Delete:
-              <span className="text-primary ml-2 break-words">
+              <span className="text-primary ml-2 break-words font-lexend">
                 select file
               </span>
             </h2>

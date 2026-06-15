@@ -56,8 +56,6 @@ const ModifyTemplate = () => {
 
   return (
     <div className="w-full bg-white border border-gray-200 rounded-2xl overflow-hidden mt-5">
-
-      {/* Header */}
       <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
         <h2 className="heading font-lexend">
           Modify A Conf Template Record:
@@ -75,8 +73,6 @@ const ModifyTemplate = () => {
             SIP_generic
           </p>
         </div>
-
-        {/* Inputs */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
           <Input
@@ -105,8 +101,6 @@ const ModifyTemplate = () => {
             ]}
           />
         </div>
-
-        {/* Textarea */}
         <div className="w-full">
 
           <Input
@@ -144,7 +138,7 @@ const ModifyTemplate = () => {
         <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
 
           <div className="p-4 border-b border-gray-200">
-            <h3 className="text-center text-base sm:text-lg font-bold uppercase text-gray-800">
+            <h3 className="text-center text-base sm:text-lg font-bold font-lexend text-gray-800">
               Carriers Using This Conf Template
             </h3>
           </div>
@@ -163,7 +157,7 @@ const ModifyTemplate = () => {
                 !showDeleteConfirm
               )
             }
-            className="text-red-600 hover:underline text-sm sm:text-base font-bold uppercase transition-all"
+            className="text-red-600 hover:underline text-sm sm:text-base font-bold uppercase transition-all font-lexend"
           >
             DELETE THIS CONF TEMPLATE
           </button>
@@ -171,13 +165,13 @@ const ModifyTemplate = () => {
           {showDeleteConfirm && (
             <div className="w-full border border-red-200 bg-red-50 rounded-xl p-4 space-y-3">
 
-              <h4 className="text-sm font-bold uppercase text-red-700">
+              <h4 className="text-sm font-bold uppercase text-red-700 font-lexend">
                 CONF TEMPLATE DELETION
                 CONFIRMATION: SIP_generic
               </h4>
 
               <Link href="/admin/templates">
-                <span className="text-blue-600 hover:underline text-sm sm:text-base cursor-pointer inline-block">
+                <span className="text-blue-600 hover:underline text-sm sm:text-base cursor-pointer inline-block font-lexend">
                   Click here to delete conf
                   template SIP_generic
                 </span>
@@ -185,7 +179,7 @@ const ModifyTemplate = () => {
             </div>
           )}
           <Link href="/report/admin-change">
-            <span className="text-blue-600 hover:underline text-sm sm:text-base cursor-pointer inline-block">
+            <span className="text-blue-600 hover:underline text-sm sm:text-base cursor-pointer inline-block font-lexend">
               Click here to see Admin
               changes to this conf template
             </span>
