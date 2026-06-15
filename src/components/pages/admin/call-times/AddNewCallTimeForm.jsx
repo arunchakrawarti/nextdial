@@ -8,7 +8,7 @@ const AddNewCallTimeForm = () => {
   return (
     <div className="w-full bg-white border border-light rounded-2xl overflow-hidden mt-5">
       <div className="px-4 sm:px-6 py-5 border-b border-light">
-        <h2 className="heading">
+        <h2 className="heading font-lexend">
           Add New Call Time
         </h2>
       </div>
@@ -51,7 +51,7 @@ const AddNewCallTimeForm = () => {
 
         </div>
         <div className="pt-8 text-center">
-          <p className="text-[15px] sm:text-[17px] text-dark leading-7">
+          <p className="text-[15px] sm:text-[17px] text-dark leading-7 font-lexend">
             Day and time options will appear once you have
             created the Call Time Definition
           </p>

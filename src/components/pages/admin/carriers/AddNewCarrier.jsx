@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
@@ -7,18 +6,14 @@ import Button from "@/components/common/Button";
 const AddNewCarrier = () => {
   return (
     <div className="w-full bg-white border border-gray-200 rounded-2xl overflow-hidden mt-5">
-      
-      {/* Header */}
+    
       <div className="px-4 sm:px-6 py-5 border-b border-gray-200 bg-white">
         <h2 className="heading font-lexend">
           ADD NEW CARRIER
         </h2>
       </div>
-
-      {/* Form Section */}
       <div className="p-4 sm:p-6 lg:p-8">
-        
-        {/* Top Inputs */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           
           <Input
@@ -93,8 +88,6 @@ const AddNewCarrier = () => {
             ]}
           />
         </div>
-
-        {/* Account Entry */}
         <div className="mt-6">
           <Input
             label="Account Entry"
@@ -103,8 +96,6 @@ const AddNewCarrier = () => {
             className="min-h-[220px] font-mono text-sm"
           />
         </div>
-
-        {/* Middle Inputs */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
           
           <Input
@@ -134,7 +125,6 @@ const AddNewCarrier = () => {
           />
         </div>
 
-        {/* Dialplan Entry */}
         <div className="mt-6">
           <Input
             label="Dialplan Entry"
@@ -144,7 +134,6 @@ const AddNewCarrier = () => {
           />
         </div>
 
-        {/* Bottom Inputs */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
           
           <Input
@@ -188,7 +177,6 @@ const AddNewCarrier = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <div className="flex justify-center sm:justify-end pt-8">
           <Button
             variant="gradient"

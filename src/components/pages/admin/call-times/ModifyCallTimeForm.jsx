@@ -10,18 +10,12 @@ const ModifyCallTimeForm = () => {
 
   return (
     <div className="w-full bg-white border border-light rounded-2xl overflow-hidden mt-5">
-
-      {/* Header */}
       <div className="px-4 sm:px-6 py-5 border-b border-light">
-        <h2 className="text-[22px] sm:text-[26px] lg:text-[28px] font-semibold uppercase text-dark">
+        <h2 className="heading font-lexend">
           Modify a Call Time
         </h2>
       </div>
-
-      {/* Main Form */}
       <div className="p-4 sm:p-6 lg:p-8">
-
-        {/* Top Section */}
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mb-6">
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
@@ -43,7 +37,6 @@ const ModifyCallTimeForm = () => {
           </div>
         </div>
 
-        {/* Comments + Group */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
 
           <Input
@@ -63,8 +56,6 @@ const ModifyCallTimeForm = () => {
             ]}
           />
         </div>
-
-        {/* Default Time */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-6">
 
           <Input
@@ -85,8 +76,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Sunday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -107,8 +96,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Monday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -129,8 +116,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Tuesday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -151,8 +136,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Wednesday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -173,8 +156,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Thursday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -195,8 +176,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Friday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -217,8 +196,6 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Saturday */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-5">
 
           <Input
@@ -239,21 +216,17 @@ const ModifyCallTimeForm = () => {
             placeholder="audio chooser"
           />
         </div>
-
-        {/* Submit */}
         <div className="flex justify-center mt-10">
           <Button variant="gradient">
             SUBMIT
           </Button>
         </div>
-
-        {/* State Call Time */}
         <div className="mt-16">
 
           <div className="grid grid-cols-1 xl:grid-cols-[280px_1fr_auto] gap-6 items-end">
 
             <div>
-              <h3 className="text-[18px] sm:text-[20px] font-semibold leading-8 text-dark">
+              <h3 className="text-[18px] sm:text-[20px] font-semibold leading-8 font-lexend text-dark">
                 Active State Call Time Definitions for this Record:
               </h3>
             </div>
@@ -284,14 +257,12 @@ const ModifyCallTimeForm = () => {
             </Button>
           </div>
         </div>
-
-        {/* Holiday */}
         <div className="mt-16">
 
           <div className="grid grid-cols-1 xl:grid-cols-[280px_1fr_auto] gap-6 items-end">
 
             <div>
-              <h3 className="text-[18px] sm:text-[20px] font-semibold leading-8 text-dark">
+              <h3 className="text-[18px] sm:text-[20px] font-semibold leading-8 font-lexend text-dark">
                 Active Holiday Definitions for this Record:
               </h3>
             </div>
@@ -378,12 +349,12 @@ const ModifyCallTimeForm = () => {
           {showDeleteConfirm && (
             <div className="w-full border-light rounded-xl bg-white p-4 sm:p-5 space-y-3">
 
-              <h3 className="text-[14px] sm:text-[16px] font-bold uppercase text-red-700">
+              <h3 className="text-[14px] sm:text-[16px] font-bold uppercase text-red-700 font-lexend">
                 CALL TIME DELETION CONFIRMATION: 12pm-5pm
               </h3>
 
               <Link href='/admin/call-times'>
-              <button className="text-primary hover:underline text-sm sm:text-base font-medium text-left">
+              <button className="text-primary hover:underline text-sm sm:text-base font-medium text-left font-lexend">
                 Click here to delete call time 12pm-5pm
               </button>
               </Link>
@@ -391,7 +362,7 @@ const ModifyCallTimeForm = () => {
           )}
 
           <Link href="/report/admin-change">
-          <button className="text-primary hover:underline text-[16px] sm:text-[18px] text-left">
+          <button className="text-primary hover:underline text-[16px] sm:text-[18px] text-left font-lexend">
             Click here to see Admin changes to this call time
           </button>
           </Link>

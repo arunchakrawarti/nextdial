@@ -8,18 +8,12 @@ const AudioStore = () => {
   return (
     <section className="w-full py-4 sm:py-6 lg:py-8">
       <div className="w-full bg-white border border-light rounded-2xl shadow-sm overflow-hidden">
-        
-        {/* Header */}
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-5 border-b border-light">
           <h2 className="heading break-words">
             Audio Store
           </h2>
         </div>
-
-        {/* Main Content */}
         <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-8 lg:py-10 space-y-10 sm:space-y-14">
-
-          {/* Upload Section */}
           <div className="w-full">
             <div className="flex flex-col xl:flex-row xl:items-end gap-4 lg:gap-6">
 
@@ -46,8 +40,6 @@ const AudioStore = () => {
 
             </div>
           </div>
-
-          {/* Info Section */}
           <div className="w-full text-center space-y-3 sm:space-y-4 px-1">
             <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-black leading-snug">
               We STRONGLY recommend uploading only 16bit Mono 8k PCM WAV audio
@@ -62,8 +54,6 @@ const AudioStore = () => {
               audio file list
             </h3>
           </div>
-
-          {/* Copy File Section */}
           <div className="w-full">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-6 sm:mb-8">
               File to Copy
@@ -100,8 +90,6 @@ const AudioStore = () => {
 
             </div>
           </div>
-
-          {/* Delete File Section */}
           <div className="w-full">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-dark text-center mb-6 sm:mb-8 leading-snug">
               File to Delete:
@@ -135,8 +123,6 @@ const AudioStore = () => {
 
             </div>
           </div>
-
-          {/* Footer Link */}
           <div className="w-full text-center pt-2 sm:pt-4">
             <Button href="/report/admin-change" 
               className="
