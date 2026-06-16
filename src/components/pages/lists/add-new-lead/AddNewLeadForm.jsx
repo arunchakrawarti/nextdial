@@ -7,7 +7,7 @@ const AddNewLeadForm = () => {
   return (
     <div className="bg-white rounded-lg p-6 mt-5 border-light">
       <div className="mb-6">
-        <h2 className="heading font-lexend mb-4 text-xl font-bold">
+        <h2 className="heading font-lexend mb-4">
           Add A New Lead
         </h2>
 

@@ -80,7 +80,6 @@ const UserGroupBulkChange = () => {
         <div className="flex justify-center sm:justify-end mt-6 sm:mt-8">
           <Button
             variant="gradient"
-            className="w-full sm:w-auto min-w-[140px]"
           >
             SUBMIT
           </Button>

@@ -11,7 +11,7 @@ export default function Header({ onMenuClick }) {
         <div className="flex items-center gap-3 min-w-0 flex-1">
           <Button
             onClick={onMenuClick}
-            className="flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-light bg-white text-black"
+            className="px-3 flex lg:hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-light bg-white text-black"
           >
             <i className="ri-menu-2-line text-xl"></i>
           </Button>

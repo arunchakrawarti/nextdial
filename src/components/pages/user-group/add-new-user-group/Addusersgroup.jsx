@@ -42,7 +42,6 @@ const Addusersgroup = () => {
         
         <Button
           variant="gradient"
-          className="w-full sm:w-auto min-w-[160px] text-sm sm:text-base tracking-wider"
         >
           SUBMIT
         </Button>

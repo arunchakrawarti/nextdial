@@ -12,8 +12,8 @@ const ModifySettingsContainer = () => {
     <div className="w-full bg-white min-h-screen py-5">
       <div className="w-full border border-gray-300 bg-white overflow-hidden rounded-2xl">
         <div className="px-4 sm:px-6 py-4 border-b border-gray-200 bg-white">
-          <h2 className="text-base sm:text-lg md:text-xl text-dark lg:text-2xl font-semibold uppercase break-words">
-            MODIFY SETTINGS CONTAINER:
+          <h2 className=" font-lexend heading">
+            Modify Settings Container:
             <span className="ml-2 text-primary">
               EXAMPLE_VID_PROMPT_SPECIAL
             </span>
@@ -54,8 +54,6 @@ const ModifySettingsContainer = () => {
                 ]}
                 className="w-full"
               />
-
-              {/* Admin User Group */}
               <Input
                 type="select"
                 label="Admin User Group"

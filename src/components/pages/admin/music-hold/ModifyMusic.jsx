@@ -12,8 +12,8 @@ const ModifyMusic = () => {
     <div className="w-full bg-white min-h-screen py-6">
       <div className="w-full max-w-6xl mx-auto border border-gray-300 bg-white overflow-hidden">
         <div className="px-4 py-2 bg-white border-b border-gray-300">
-          <h2 className="heading">
-            MODIFY A MUSIC ON HOLD RECORD: default
+          <h2 className="heading font-lexend">
+            Modify a Music On Hold Record: default
           </h2>
         </div>
         <div className="px-4 md:px-10 py-8">

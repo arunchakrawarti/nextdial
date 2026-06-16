@@ -47,7 +47,7 @@ const AddListForm = () => {
           />
         </div>
         <div className="md:col-span-2 flex justify-end mt-6 pt-4 border-t border-gray-100">
-          <Button variant="gradient" className="px-20 py-3 uppercase tracking-widest text-xs font-semibold">
+          <Button variant="gradient" className="px-20">
             Submit
           </Button>
         </div>

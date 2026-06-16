@@ -113,7 +113,6 @@ const ModifyTemplate = () => {
 
           <Button
             variant="gradient"
-            className="w-full sm:w-auto px-10 py-3"
           >
             SUBMIT
           </Button>

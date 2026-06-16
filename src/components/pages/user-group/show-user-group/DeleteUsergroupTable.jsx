@@ -101,11 +101,8 @@ const DeleteUsergroupTable = () => {
 
   return (
     <div className="w-full bg-white border-light rounded-xl">
-      
       <div className="mb-3 p-4">
-        <h2 className="heading font-lexend">
-          User Groups
-        </h2>
+        <h2 className="heading font-lexend">User Groups</h2>
 
         <p className="text-md text-gray-600 mt-1">
           Manage and view user groups in the system.
@@ -113,11 +110,7 @@ const DeleteUsergroupTable = () => {
       </div>
 
       <div className="rounded-xl overflow-hidden border-light">
-        <BasicTable
-          columns={columns}
-          data={data}
-          wrapperClassName=""
-        />
+        <BasicTable columns={columns} data={data} wrapperClassName="" />
       </div>
     </div>
   );

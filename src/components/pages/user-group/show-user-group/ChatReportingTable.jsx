@@ -146,7 +146,7 @@ const ChatReportingTable = () => {
             </div>
           </div>
           <div className="flex  border-t mt-8 pt-6">
-            <Button variant="gradient" className="px-20 py-3 rounded-lg ">
+            <Button variant="gradient">
               SUBMIT
             </Button>
           </div>

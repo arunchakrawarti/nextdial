@@ -55,7 +55,6 @@ const AddExtensionGroupEntry = () => {
         <div className="flex justify-center sm:justify-end mt-8">
           <Button
             variant="gradient"
-            className="w-full sm:w-auto min-w-[160px]"
           >
             SUBMIT
           </Button>

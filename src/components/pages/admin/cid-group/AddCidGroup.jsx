@@ -61,16 +61,6 @@ const AddCidGroup = () => {
             <div className="w-full flex justify-center sm:justify-end mt-8 sm:mt-10">
               <Button
                 variant="gradient"
-                className="
-                  w-full 
-                  sm:w-auto 
-                  min-w-[160px]
-                  px-6 sm:px-10 
-                  py-3 
-                  text-sm sm:text-base 
-                  font-semibold 
-                  uppercase
-                "
               >
                 Submit
               </Button>

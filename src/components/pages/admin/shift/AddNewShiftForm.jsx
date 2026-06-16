@@ -150,7 +150,6 @@ const AddNewShiftForm = () => {
 
           <Button
             variant="gradient"
-            className="w-full sm:w-auto px-10 sm:px-14 py-3"
           >
             SUBMIT
           </Button>

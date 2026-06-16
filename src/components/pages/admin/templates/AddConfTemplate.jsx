@@ -58,7 +58,6 @@ const AddConfTemplate = () => {
         <div className="flex justify-center sm:justify-end pt-2">
           <Button
             variant="gradient"
-            className="w-full sm:w-auto px-10 sm:px-14 py-3 text-base font-semibold uppercase tracking-wider"
           >
             SUBMIT
           </Button>

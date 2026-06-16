@@ -65,7 +65,7 @@ const carrierColumns = [
         />
       </div>
       <div className="flex justify-center pt-2">
-        <Button type="submit" variant="gradient" className="px-14 py-3 font-bold text-sm tracking-wide">
+        <Button type="submit" variant="gradient">
           SUBMIT
         </Button>
       </div>

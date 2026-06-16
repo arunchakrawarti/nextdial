@@ -27,13 +27,6 @@ const AudioStore = () => {
 
               <Button
                 variant="gradient"
-                className="
-                  w-full
-                  sm:w-auto
-                  px-6 sm:px-8
-                  py-3
-                  text-sm sm:text-base
-                "
               >
                 Submit
               </Button>
@@ -76,13 +69,6 @@ const AudioStore = () => {
               <div className="flex justify-end">
                 <Button
                   variant="gradient"
-                  className="
-                    w-full
-                    sm:w-auto
-                    px-8 sm:px-10
-                    py-3
-                    text-sm sm:text-base
-                  "
                 >
                   Submit
                 </Button>
@@ -110,13 +96,6 @@ const AudioStore = () => {
 
               <Button
                 variant="gradient"
-                className="
-                  w-full
-                  sm:w-auto
-                  px-8
-                  py-3
-                  text-sm sm:text-base
-                "
               >
                 Submit
               </Button>

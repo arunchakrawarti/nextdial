@@ -93,7 +93,7 @@ const AddScriptForm = () => {
           />
         </div>
         <div className="lg:col-span-2 flex justify-end mt-4">
-          <Button variant="gradient" className="px-20">
+          <Button variant="gradient">
             Submit
           </Button>
         </div>

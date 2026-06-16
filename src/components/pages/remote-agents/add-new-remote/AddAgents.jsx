@@ -92,7 +92,6 @@ const AddAgents = () => {
         <div className="flex justify-center sm:justify-end pt-6">
           <Button
             variant="gradient"
-            className="w-full sm:w-auto min-w-[160px]"
           >
             SUBMIT
           </Button>

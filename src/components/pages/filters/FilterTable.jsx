@@ -61,7 +61,7 @@ const LeadFilterList = () => {
     <div className="w-full mt-5 space-y-4">
       <div className="space-y-1">
 
-        <h3 className="font-lexend font-semibold text-base text-gray-800">
+        <h3 className="font-lexend heading">
           Lead Filter Listings
         </h3>
       </div>

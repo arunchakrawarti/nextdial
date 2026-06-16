@@ -91,40 +91,32 @@ const UserGroupTable = () => {
 
   return (
     <div>
-        <div className="w-full bg-white rounded-2xl border border-gray-200 overflow-hidden">
-      <div className="p-6 flex items-start gap-4 border-b">
-        <div>
-          <h2 className="heading font-lexend">
-            USER GROUP CALLBACK HOLD LISTINGS:
-          </h2>
+      <div className="w-full bg-white rounded-2xl border border-gray-200 overflow-hidden">
+        <div className="p-6 flex items-start gap-4 border-b">
+          <div>
+            <h2 className="heading font-lexend">
+              USER GROUP CALLBACK HOLD LISTINGS:
+            </h2>
+          </div>
+        </div>
+        <div className="overflow-x-auto">
+          <BasicTable columns={columns} data={data} wrapperClassName="" />
         </div>
       </div>
-      <div className="overflow-x-auto">
-        <BasicTable
-          columns={columns}
-          data={data}
-          wrapperClassName=""
-        />
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 sm:p-8 space-y-4 mt-5">
+        <a
+          href="/callback-holds"
+          className="block text-primary hover:underline text-[0.95rem] font-medium transition-colors"
+        >
+          Remove LIVE Callbacks older than one month for this user group
+        </a>
+        <a
+          href="/timeclock-status"
+          className="block text-primary hover:underline text-[0.95rem] font-medium transition-colors"
+        >
+          Remove LIVE Callbacks older than one week for this user group
+        </a>
       </div>
-     
-    </div>
-     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 sm:p-8 space-y-4 mt-5">
-
-  <a
-    href="/callback-holds"
-    className="block text-primary hover:underline text-[0.95rem] font-medium transition-colors"
-  >
-    Remove LIVE Callbacks older than one month for this user group
-  </a>
-  <a
-    href="/timeclock-status"
-    className="block text-primary hover:underline text-[0.95rem] font-medium transition-colors"
-  >
-    Remove LIVE Callbacks older than one week for this user group
-  </a>
-
-
-</div>
     </div>
   );
 };

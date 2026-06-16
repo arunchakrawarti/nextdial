@@ -13,6 +13,7 @@ const ModifyStateCallTimeForm = () => {
       <div className="px-4 sm:px-6 py-5 border-b border-light">
         <h2 className="heading font-lexend">Modify A State Call Time</h2>
       </div>
+
       <div className="p-4 sm:p-6 lg:p-8">
         <div className="grid grid-cols-1 xl:grid-cols-[220px_1fr] gap-6 mb-6 items-end">
           <div>
@@ -20,7 +21,6 @@ const ModifyStateCallTimeForm = () => {
               Call Time ID
             </label>
           </div>
-
           <div>
             <p className="text-[18px] sm:text-[20px] font-semibold text-dark">
               alabama
@@ -47,59 +47,30 @@ const ModifyStateCallTimeForm = () => {
             type="select"
             defaultValue="ALL"
             options={[
-              {
-                label: "---ALL---",
-                value: "ALL",
-              },
-              {
-                label: "Admin",
-                value: "admin",
-              },
-              {
-                label: "Agent",
-                value: "agent",
-              },
+              { label: "---ALL---", value: "ALL" },
+              { label: "Admin", value: "admin" },
+              { label: "Agent", value: "agent" },
             ]}
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+        <hr className="border-light mb-8" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <Input label="Default Start" type="text" defaultValue="800" />
-
           <Input label="Default Stop" type="text" defaultValue="2000" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Sunday Start" type="text" defaultValue="2400" />
-
           <Input label="Sunday Stop" type="text" defaultValue="2400" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Monday Start" type="text" defaultValue="0" />
-
           <Input label="Monday Stop" type="text" defaultValue="0" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Tuesday Start" type="text" defaultValue="0" />
-
           <Input label="Tuesday Stop" type="text" defaultValue="0" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Wednesday Start" type="text" defaultValue="0" />
-
           <Input label="Wednesday Stop" type="text" defaultValue="0" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Thursday Start" type="text" defaultValue="0" />
-
           <Input label="Thursday Stop" type="text" defaultValue="0" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
           <Input label="Friday Start" type="text" defaultValue="0" />
-
           <Input label="Friday Stop" type="text" defaultValue="0" />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <Input label="Saturday Start" type="text" defaultValue="0" />
-
           <Input label="Saturday Stop" type="text" defaultValue="0" />
         </div>
         <div className="flex justify-center mb-14">
@@ -117,18 +88,9 @@ const ModifyStateCallTimeForm = () => {
             type="select"
             defaultValue=""
             options={[
-              {
-                label: "Select Holiday",
-                value: "",
-              },
-              {
-                label: "Christmas",
-                value: "christmas",
-              },
-              {
-                label: "New Year",
-                value: "newyear",
-              },
+              { label: "Select Holiday", value: "" },
+              { label: "Christmas", value: "christmas" },
+              { label: "New Year", value: "newyear" },
             ]}
           />
 
@@ -146,12 +108,12 @@ const ModifyStateCallTimeForm = () => {
           >
             DELETE THIS STATE CALL TIME DEFINITION
           </button>
+
           {showDeleteConfirm && (
             <div className="border border-red-200 bg-red-50 rounded-xl p-4 sm:p-5 space-y-3">
               <h3 className="text-[15px] sm:text-[17px] font-bold uppercase font-lexend text-red-700">
                 STATE CALL TIME DELETION CONFIRMATION: alabama
               </h3>
-
               <Link href="/admin/call-times">
                 <button className="text-primary hover:underline text-sm sm:text-base font-medium text-left font-lexend">
                   Click here to delete state call time alabama
@@ -159,6 +121,7 @@ const ModifyStateCallTimeForm = () => {
               </Link>
             </div>
           )}
+
           <Link href="/report/admin-change">
             <button className="text-primary hover:underline text-[16px] sm:text-[18px] text-left font-lexend">
               Click here to see Admin changes to this call time

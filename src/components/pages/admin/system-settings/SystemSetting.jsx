@@ -16,7 +16,6 @@ const SystemSetting = () => {
           <h2 className="heading">
             Modify System Settings
           </h2>
-
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
           

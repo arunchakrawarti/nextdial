@@ -49,7 +49,6 @@ const AddConfBridge = () => {
             <div className="flex justify-center sm:justify-end pt-8">
               <Button
                 variant="gradient"
-                className="w-full sm:w-auto px-10 py-3 text-sm sm:text-base font-semibold uppercase"
               >
                 Submit
               </Button>
