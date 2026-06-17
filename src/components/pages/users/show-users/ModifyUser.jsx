@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Input from "@/components/common/Input"; // आपका कस्टम इनपुट कॉम्पोनेंट
+import Input from "@/components/common/Input";
 import AgentInterfaceOptions from "./AgentInterfaceOptions";
 import CampaignRanksTable from "./CampaignRanksTable";
 import InboundGroupsTable from "./InboundGroupsTable";

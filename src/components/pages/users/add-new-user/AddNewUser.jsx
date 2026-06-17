@@ -62,7 +62,7 @@ const AddNewUser = () => {
           />
         </div>
         <div className="md:col-span-2 flex justify-end mt-4">
-          <Button  variant="gradient">Submit</Button>
+          <Button  variant="gradient">SUBMIT</Button>
         </div>
       </form>
     </div>

@@ -5,13 +5,11 @@ import Input from "@/components/common/Input";
 const MainStatus = () => {
   return (
     <div>
-      <div className="rounded-[1rem]  border-light bg-white p-[1.5rem]">
+      <div className="rounded-lg  border-light bg-white p-4">
         <div>
-          <h1 className="heading font-lexend">
-            Single Agent Daily
-          </h1>
+          <h1 className="heading font-lexend">Single Agent Daily</h1>
 
-          <p className="mt-[0.25rem] font-lexend font-light text-[0.875rem] mb-5 text-gray-muted">
+          <p className="mt-1 font-lexend font-light text-[0.875rem] mb-5 text-gray-muted">
             Please select a user and date-time below and click submit. Note:
             stats taken from shift specified
           </p>
@@ -42,11 +40,7 @@ const MainStatus = () => {
               { label: "Agent", value: "agent" },
             ]}
           />
-          <Input
-            label="USER"
-            type="text"
-            placeholder="Enter User"
-          />
+          <Input label="USER" type="text" placeholder="Enter User" />
           <Input
             label="SHIFT"
             type="select"
@@ -59,18 +53,17 @@ const MainStatus = () => {
           />
         </div>
 
-        <div className="mt-[1.5rem] flex items-center gap-[0.5rem]">
+        <div className="mt-5 flex items-center gap-4">
           <Input type="checkbox" label="Search archived data" />
         </div>
 
-        <div className="mt-[2rem] flex justify-end">
+        <div className="mt-5 flex justify-end">
           <Button
             variant="gradient"
             icon="arrow-right-line"
             iconPosition="right"
-            className="rounded-[0.75rem]"
           >
-            Submit
+            SUBMIT
           </Button>
         </div>
       </div>

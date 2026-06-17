@@ -5,7 +5,7 @@ import Button from "@/components/common/Button";
 
 const AdminUserOptionsForm = () => {
   return (
-    <form className="w-full  space-y-6">
+    <form className="w-full space-y-6">
       <div className="w-full bg-white rounded-xl border-light overflow-hidden">
         <div className="bg-primary px-6 py-4 flex items-center gap-2">
           <i className="ri-settings-4-line text-white text-xl"></i>
@@ -469,10 +469,10 @@ const AdminUserOptionsForm = () => {
         </div>
         <div className="p-4 flex justify-end items-center gap-3">
           <Button type="submit" variant="gradient">
-            <i className="ri-save-line"></i> SUBMIT
+             SUBMIT
           </Button>
           <Button variant="danger" type="button">
-            <i className="ri-close-line"></i> Cancel
+             Cancel
           </Button>
         </div>
       </div>
